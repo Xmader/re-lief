@@ -1,0 +1,202 @@
+// YesNoDialog.tjs - はい/いいえを選択するダイアログボックス
+// Copyright (C)2001-2009, W.Dee and contributors  改変・配布は自由です
+
+
+class DialogButtonLayer extends ButtonLayer{
+	var path;
+	function DialogButtonLayer(window,parent,sound)
+	{
+		super.ButtonLayer(...);
+		this.path = sound;
+	}
+	
+	function onMouseEnter()
+	{
+		kag.se[0].setOptions(%["volume"=>"100"]);
+		kag.se[0].play(%['storage'=>this.path]);
+		super.onMouseEnter(...);
+	}
+}
+
+class YesNoDialogWindow extends Window
+{
+	var yesButton; // [はい] ボタン
+	var noButton; // [いいえ] ボタン
+	var iconLayer;
+	var result = false; // no:false yes:true
+
+	function YesNoDialogWindow(message, cap)
+	{
+		super.Window();
+
+		// このウィンドウではもっとも基本的なdrawerを用いる
+		// drawDevice.preferredDrawer = global.Window.PassThroughDrawDevice.dtDrawDib;
+
+		// メインウィンドウから cursor**** の情報をとってくる
+		if(global.Window.mainWindow !== null &&
+			typeof global.Window.mainWindow.cursorDefault != "undefined")
+			this.cursorDefault = global.Window.mainWindow.cursorDefault;
+		if(global.Window.mainWindow !== null &&
+			typeof global.Window.mainWindow.cursorPointed != "undefined")
+			this.cursorPointed = global.Window.mainWindow.cursorPointed;
+
+			// 外見の調整
+	     borderStyle = bsNone;  // ウィンドウのボーダーをなくす
+	     innerSunken = false;   // クライアント領域の外見をフラットに（凹ませない）
+	     // caption = cap;      // ←ウィンドウのボーダーをなくしたため、現在は無意味なコード
+
+	     // プライマリレイヤの作成
+	     add(new Layer(this, null));
+			 primaryLayer.loadImages("image/dialog/base");
+			 primaryLayer.setSizeToImageSize();
+			 setMaskRegion(192);
+
+		// プライマリのマウスカーソルを設定
+		if(typeof this.cursorDefault !== "undefined")
+			primaryLayer.cursor = cursorDefault;
+
+			//メッセージ文字設定
+			//primaryLayer.font.bold=true;
+			primaryLayer.font.height = 18;
+			primaryLayer.font.face ="ロダンntlg";
+
+		// サイズを決定
+		var tw = primaryLayer.font.getTextWidth(message);
+		var th = primaryLayer.font.getTextHeight(message);
+
+
+		var w = 446;
+		if(w<200) w = 200;
+		var h = 156;
+		setInnerSize(w,h);
+		// 拡大率の設定		
+
+
+		// ウィンドウ位置の調整
+		if(global.Window.mainWindow !== null && global.Window.mainWindow isvalid)
+		{
+			var win = global.Window.mainWindow;
+			var l, t;
+			l = ((win.width - width)>>1) + win.left;
+			t = ((win.height - height)>>1) + win.top;
+			if(l < 0) l = 0;
+			if(t < 0) t = 0;
+			if(l + width > System.screenWidth) l = System.screenWidth - width;
+			if(t + height > System.screenHeight) t = System.screenHeight - height;
+			setPos(l, t);
+		}
+		else
+		{
+			setPos((System.screenWidth - width)>>1, (System.screenHeight - height)>>1);
+		}
+
+		// メッセージの描画
+		primaryLayer.drawText((w - tw)/2+5, 46, message, 0x9F9FA1);
+		iconLayer = new Layer(this, primaryLayer);
+		//メッセージわきのアイコンの描画レイヤ
+		add(iconLayer);
+		iconLayer.setPos((w - tw)/2-20, 40, 23, 30);
+		iconLayer.loadImages("image/dialog/ICON");
+		iconLayer.visible=true;
+
+		// Yesボタン
+		add(yesButton = new DialogButtonLayer(this, primaryLayer,"sound/sse/Mouseover.ogg"));
+		yesButton.caption = "はい";
+		yesButton.captionColor = clBtnText;
+		yesButton.width = 95;
+		yesButton.height = 26;
+		yesButton.top = 87;
+		yesButton.left = 115;
+		yesButton.visible = true;
+		yesButton.loadImages("image/dialog/Dialog_yes.png");
+
+		// Noボタン
+
+		add(noButton = new DialogButtonLayer(this, primaryLayer,"sound/sse/Mouseover.ogg"));
+		noButton.caption = "いいえ";
+		noButton.captionColor = clBtnText;
+		noButton.width = 95;
+		noButton.height = 26;
+		noButton.top = 87;
+		noButton.left = 229;
+		noButton.visible = true;
+		noButton.loadImages("image/dialog/Dialog_no.png");
+	}
+
+	function finalize()
+	{
+		super.finalize(...);
+	}
+
+	function action(ev)
+	{
+		// action
+		if(ev.type == "onClick")
+		{
+			if(ev.target == yesButton)
+			{
+				result = true;
+				close();
+			}
+			else if(ev.target == noButton)
+			{
+				result = false;
+				close();
+			}
+		}
+		else if(ev.type == "onKeyDown" && ev.target === this)
+		{
+			// パッド入力に対応する処理
+			switch(ev.key)
+			{
+			case VK_PADLEFT:
+				yesButton.focus();
+				break;
+			case VK_PADRIGHT:
+				noButton.focus();
+				break;
+			case VK_PAD1:
+				if(focusedLayer == yesButton)
+				{
+					result = true;
+					close();
+				}
+				else if(focusedLayer == noButton)
+				{
+					result = false;
+					close();
+				}
+				break;
+			case VK_PAD2:
+				result = false;
+				close();
+				break;
+			}
+		}
+	}
+
+	function onKeyDown(key, shift)
+	{
+		super.onKeyDown(...);
+		if(key == VK_ESCAPE)
+		{
+			// ESC キーが押された
+			// 「いいえ」として処理
+			result = false;
+			close();
+		}
+	}
+}
+
+
+// Yes か No かはっきりさせる関数
+function askYesNo(message, caption = "確認")
+{
+	if(sf.confirm)
+		return true;
+	var win = new YesNoDialogWindow(message, caption);
+	win.showModal();
+	var res = win.result;
+	invalidate win;
+	return res;
+}

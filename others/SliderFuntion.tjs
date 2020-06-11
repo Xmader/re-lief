@@ -1,0 +1,397 @@
+// システム効果音バッファ大域音量を変更
+function ssevolume_func(pos)
+{
+	sf.sse_v = pos;
+	tf.gvolume = (sf.sound_origin_volume * sf.master_v * sf.sse_v)/100;
+	var dic = %["gvolume"=>tf.gvolume];
+	kag.se[0].setOptions(dic);
+	//kag.se[0].play(%['storage'=>'sound/sse/1.wav']);
+	invalidate dic;
+}
+
+// 文字表示速度（厳密にはウェイト）を変更
+function chspeed_func(pos)
+{
+// posのところがノーマルとノーマルより大きい場合に値を逆にする
+	sf.chspeed = pos;
+	if(pos == kag.chSpeeds.normal){
+		return;
+	}
+	if(pos == kag.userChSpeed){
+		if(pos < kag.chSpeeds.normal){
+			pos = pos - kag.chSpeeds.fast;
+			pos = kag.chSpeeds.slow - pos;
+			kag.userChSpeed = pos;
+			return;
+		}else if(pos > kag.chSpeeds.normal){
+			pos = kag.chSpeeds.slow - pos;
+			pos = kag.chSpeeds.fast + pos;
+			kag.userChSpeed = pos;
+			return;
+		}else{
+			kag.userChSpeed = pos;
+			return;
+		}
+	}
+	if(pos < kag.chSpeeds.normal){
+		pos = pos + (kag.chSpeeds.slow - kag.chSpeeds.normal);
+		pos = kag.chSpeeds.slow - pos;
+		pos = pos + kag.chSpeeds.normal;
+	}else if(pos > kag.chSpeeds.normal){
+		pos = kag.chSpeeds.normal - pos;
+		pos = kag.chSpeeds.normal + pos;
+		
+	}else{
+		pos = pos;
+	}
+	kag.userChSpeed = pos;
+}
+
+
+// オートの改行ウェイトを変更
+function autospeed_func(pos)
+{
+	sf.autospeed = pos;
+	if(pos == kag.autoModeLineWaits.medium){
+		return;
+	}
+	if(pos == kag.autoModeLineWait){
+		if(pos < kag.autoModeLineWaits.medium){
+			pos = pos - kag.autoModeLineWaits.fast;
+			pos = kag.autoModeLineWaits.slow - pos;
+			kag.autoModeLineWait = pos;
+			kag.autoModePageWait = pos*3;
+			return;
+		}else if(pos > kag.autoModeLineWaits.medium){
+			pos = kag.autoModeLineWaits.slow - pos;
+			pos = kag.autoModeLineWaits.fast + pos;
+			kag.autoModeLineWait = pos;
+			kag.autoModePageWait = pos*3;
+			return;
+		}else{
+			kag.autoModeLineWait = pos;
+			kag.autoModePageWait = pos*3;
+			return;
+		}
+	}
+// posのところがノーマルとノーマルより大きい場合に値を逆にする
+	if(pos < kag.autoModeLineWaits.medium){
+		pos = pos + (kag.autoModeLineWaits.slow - kag.autoModeLineWaits.medium);
+		pos = kag.autoModeLineWaits.slow - pos;
+		pos = pos + kag.autoModeLineWaits.medium;
+	}else if(pos > kag.autoModeLineWaits.medium){
+		pos = kag.autoModeLineWaits.slow-pos;
+	}else{
+		pos = pos;
+	}
+	kag.autoModeLineWait = pos;
+	kag.autoModePageWait = pos*3;
+}
+
+// オートの改ページウェイトを変更
+function pagewait_func(pos)
+{
+	sf.autopagewait = pos;
+	if(pos == kag.autoModePageWaits.medium){
+		return;
+	}
+	if(pos == kag.autoModePageWait){
+		if(pos < kag.autoModePageWaits.medium){
+			pos = pos - kag.autoModePageWaits.fast;
+			pos = kag.autoModePageWaits.slow - pos;
+			kag.autoModePageWait = pos;
+			return;
+		}else if(pos > kag.autoModePageWaits.medium){
+			pos = kag.autoModePageWaits.slow - pos;
+			pos = kag.autoModePageWaits.fast + pos;
+			kag.autoModePageWait = pos;
+			return;
+		}else{
+			kag.autoModePageWait = pos;
+			return;
+		}
+	}
+// posのところがノーマルとノーマルより大きい場合に値を逆にする
+	if(pos < kag.autoModePageWaits.medium){
+		pos = pos + (kag.autoModePageWaits.slow - kag.autoModePageWaits.medium);
+		pos = kag.autoModePageWaits.slow - pos;
+		pos = pos + kag.autoModePageWaits.medium;
+	}else if(pos > kag.autoModePageWaits.medium){
+		pos = kag.autoModePageWaits.slow - pos;
+	}else{
+		pos = pos;
+	}
+	kag.autoModePageWait = pos;
+}
+// メッセージレイヤの不透明度
+function opacity_func(pos)
+{
+	tf.opacity_message_i = sf.opacity;
+	sf.opacity = pos;
+	if(tf.opacity_message_i != sf.opacity){
+		kag.tagHandlers.layopt(%['opacity'=>sf.opacity, 'layer'=>'41']);
+		//kag.process('text.ks', '*message_loop');
+	}
+	return;
+}
+
+function master_volume_func(pos)
+{
+	sf.master_v = pos;
+	all_master_func();
+}
+
+function bgm_volume_func(pos)
+{
+	sf.bgm_v = pos;
+	tf.gvolume = (sf.sound_origin_volume * sf.master_v * sf.bgm_v)/100;
+	tf.volume = 100;
+	var dic = %["gvolume"=>tf.gvolume];
+	var dic1 = %["gvolume"=>tf.gvolume];
+	var dic2 = %["gvolume"=>tf.gvolume];
+	var dic3 = %["gvolume"=>tf.gvolume];
+	kag.bgm.setOptions(dic);
+	kag.se[18].setOptions(dic1);
+	kag.se[19].setOptions(dic2);
+	kag.se[20].setOptions(dic3);
+	invalidate dic;
+	invalidate dic1;
+	invalidate dic2;
+	invalidate dic3;
+}
+//効果音
+function se_volume_func(pos)
+{
+	sf.se_v = pos;
+	tf.gvolume = (sf.sound_origin_volume * sf.master_v * sf.se_v)/120;
+	var dic = %["gvolume"=>tf.gvolume];
+	kag.se[1].setOptions(dic);
+	invalidate dic;
+}
+//環境音
+function ese_volume_func(pos)
+{
+	sf.ese_v = pos;
+	tf.gvolume = (sf.sound_origin_volume * sf.master_v * sf.ese_v)/110;
+	var dic = %["gvolume"=>tf.gvolume];
+	kag.se[2].setOptions(dic);
+	invalidate dic;
+}
+
+function movie_volume_func(pos)
+{
+	sf.movie_marker = pos;
+	sf.movie_v = (sf.movie_marker * sf.master_v * sf.sound_origin_volume)/100;
+}
+
+function voicemaster_volume_func(pos)
+{
+	sf.voicemaster_v = pos;
+	voice_func();
+	tf.gvolume = (sf.voicemaster_v * sf.master_v * sf.sound_origin_volume)/100;
+	return;
+}
+
+function voice_hinako_func(pos)
+{
+	sf.voice1_v = pos;
+	tf.gvolume = (sf.voice1_v * sf.master_v * sf.sound_origin_volume *  sf.voicemaster_v)/10000;
+	var dic = %["gvolume"=>tf.gvolume];
+	kag.se[3].setOptions(dic);
+	//kag.se[3].play(%['storage'=>'sound/sse/1.wav']);
+	invalidate dic;
+}
+function voice_ruka_func(pos)
+{
+	sf.voice2_v = pos;
+	tf.gvolume = (sf.voice2_v * sf.master_v * sf.sound_origin_volume *  sf.voicemaster_v)/10000;
+	var dic = %["gvolume"=>tf.gvolume];
+	kag.se[4].setOptions(dic);
+	//kag.se[4].play(%['storage'=>'sound/sse/1.wav']);
+	invalidate dic;
+}
+function voice_momo_func(pos)
+{
+	sf.voice3_v = pos;
+	tf.gvolume = (sf.voice3_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	var dic = %["gvolume"=>tf.gvolume];
+	kag.se[5].setOptions(dic);
+	//kag.se[5].play(%['storage'=>'sound/sse/1.wav']);
+	invalidate dic;
+}
+function voice_ai_func(pos)
+{
+	sf.voice4_v = pos;
+	tf.gvolume = (sf.voice4_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	var dic = %["gvolume"=>tf.gvolume];
+	kag.se[6].setOptions(dic);
+	//kag.se[6].play(%['storage'=>'sound/sse/1.wav']);
+	invalidate dic;
+}
+function voice_yuu_func(pos)
+{
+	sf.voice5_v = pos;
+	tf.gvolume = (sf.voice5_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	var dic = %["gvolume"=>tf.gvolume];
+	kag.se[7].setOptions(dic);
+	//kag.se[7].play(%['storage'=>'sound/sse/1.wav']);
+	invalidate dic;
+}
+function voice_miriya_func(pos)
+{
+	sf.voice6_v = pos;
+	tf.gvolume = (sf.voice6_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	var dic = %["gvolume"=>tf.gvolume];
+	kag.se[8].setOptions(dic);
+	//kag.se[8].play(%['storage'=>'sound/sse/1.wav']);
+	invalidate dic;
+}
+function voice_tsukasa_func(pos)
+{
+	sf.voice7_v = pos;
+	tf.gvolume = (sf.voice7_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	var dic = %["gvolume"=>tf.gvolume];
+	kag.se[9].setOptions(dic);
+	//kag.se[9].play(%['storage'=>'sound/sse/1.wav']);
+	invalidate dic;
+}
+function voice_rihito_func(pos)
+{
+	sf.voice8_v = pos;
+	tf.gvolume = (sf.voice8_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	var dic = %["gvolume"=>tf.gvolume];
+	kag.se[10].setOptions(dic);
+	//kag.se[10].play(%['storage'=>'sound/sse/1.wav']);
+	invalidate dic;
+}
+function voice_makoto_func(pos)
+{
+	sf.voice9_v = pos;
+	tf.gvolume = (sf.voice9_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	var dic = %["gvolume"=>tf.gvolume];
+	kag.se[11].setOptions(dic);
+	//kag.se[11].play(%['storage'=>'sound/sse/1.wav']);
+	invalidate dic;
+}
+function voice_mikuni_func(pos)
+{
+	sf.voice10_v = pos;
+	tf.gvolume = (sf.voice10_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	var dic = %["gvolume"=>tf.gvolume];
+	kag.se[12].setOptions(dic);
+	//kag.se[12].play(%['storage'=>'sound/sse/1.wav']);
+	invalidate dic;
+}
+function voice_kana_func(pos)
+{
+	sf.voice11_v = pos;
+	tf.gvolume = (sf.voice11_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	var dic = %["gvolume"=>tf.gvolume];
+	kag.se[13].setOptions(dic);
+	//kag.se[13].play(%['storage'=>'sound/sse/1.wav']);
+	invalidate dic;
+}
+function voice_toto_func(pos)
+{
+	sf.voice12_v = pos;
+	tf.gvolume = (sf.voice12_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	var dic = %["gvolume"=>tf.gvolume];
+	kag.se[14].setOptions(dic);
+	//kag.se[14].play(%['storage'=>'sound/sse/1.wav']);
+	invalidate dic;
+}
+function voice_saito_func(pos)
+{
+	sf.voice13_v = pos;
+	tf.gvolume = (sf.voice13_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	var dic = %["gvolume"=>tf.gvolume];
+	kag.se[15].setOptions(dic);
+	//kag.se[15].play(%['storage'=>'sound/sse/1.wav']);
+	invalidate dic;
+}
+function voice_sonota_func(pos)
+{
+	sf.voice14_v = pos;
+	tf.gvolume = (sf.voice14_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	var dic = %["gvolume"=>tf.gvolume];
+	kag.se[16].setOptions(dic);
+	//kag.se[16].play(%['storage'=>'sound/sse/1.wav']);
+	invalidate dic;
+}
+function sound_master_func()
+{
+
+	all_master_func();
+}
+
+function all_master_func()
+{
+	tf.bgmgvolume = (sf.sound_origin_volume * sf.master_v * sf.bgm_v)/100;
+	tf.bgmvolume = 100;
+
+	tf.ssevolume = (sf.master_v * sf.sound_origin_volume * sf.sse_v)/100;
+
+	tf.segvolume = (sf.master_v * sf.sound_origin_volume * sf.se_v)/120;
+
+	tf.esegvolume = (sf.master_v * sf.sound_origin_volume * sf.ese_v)/110;
+
+	var dic = %["gvolume"=>tf.bgmgvolume];
+	var dic1 = %["gvolume"=>tf.ssevolume];
+	var dic2 = %["gvolume"=>tf.segvolume];
+	var dic3 = %["gvolume"=>tf.esegvolume];
+	kag.bgm.setOptions(dic);
+	kag.se[0].setOptions(dic1);
+	kag.se[1].setOptions(dic2);
+	kag.se[2].setOptions(dic3);
+	var dic4 = %["gvolume"=>tf.bgmgvolume];
+	var dic5 = %["gvolume"=>tf.bgmgvolume];
+	var dic6 = %["gvolume"=>tf.bgmgvolume];
+	kag.se[18].setOptions(dic4);
+	kag.se[19].setOptions(dic5);
+	kag.se[20].setOptions(dic6);
+	sf.movie_v = (sf.movie_marker * sf.master_v * sf.sound_origin_volume)/100;
+	invalidate dic;
+	invalidate dic1;
+	invalidate dic2;
+	invalidate dic3;
+	invalidate dic4;
+	invalidate dic5;
+	invalidate dic6;
+	
+	voice_func();
+}
+// 全ボイスバッファ大域音量を変更
+function voice_func()
+{
+	tf.gvolume = [];
+	tf.gvolume[1] = (sf.voice1_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	tf.gvolume[2] = (sf.voice2_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	tf.gvolume[3] = (sf.voice3_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	tf.gvolume[4] = (sf.voice4_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	tf.gvolume[5] = (sf.voice5_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	tf.gvolume[6] = (sf.voice6_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	tf.gvolume[7] = (sf.voice7_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	tf.gvolume[8] = (sf.voice8_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	tf.gvolume[9] = (sf.voice9_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	tf.gvolume[10] = (sf.voice10_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	tf.gvolume[11] = (sf.voice11_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	tf.gvolume[12] = (sf.voice12_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	tf.gvolume[13] = (sf.voice13_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	tf.gvolume[14] = (sf.voice14_v * sf.master_v * sf.sound_origin_volume * sf.voicemaster_v)/10000;
+	for(var i = 3; i < 17; i++){
+		var j = i-2;
+		var dic = %["gvolume"=>tf.gvolume[j]];
+		kag.se[i].setOptions(dic);
+		invalidate dic;
+	}
+	if(sf.sound_origin_volume===void || sf.sound_origin_volume==0){
+		tf.voice_volume = 0;
+	}
+	else{
+		tf.voice_volume = 100*sf.sound_origin_volume;
+	}
+		var dic = %["gvolume"=>tf.voice_volume];
+		kag.se[21].setOptions(dic);
+		invalidate dic;
+
+}
