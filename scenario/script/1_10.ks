@@ -895,4 +895,4 @@
 ;////////////////////////////////OP再生///
 
 ;// NEXT //
-[jump storage="scenario/script/2_1.ks"]
+[jump storage="script/2_1.ks"]

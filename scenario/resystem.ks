@@ -27,6 +27,7 @@ sf.skip = 0;
 sf.skip_choice = 0;
 sf.auto_choice = 0;
 sf.font = 0;
+sf.font_size = 0;
 [endscript]
 [eval exp="tf.previous_font_face='ロダン'"]
 [eval exp="kag.chDefaultFace = tf.previous_font_face"]
@@ -99,7 +100,7 @@ sf.skip = 0;
 sf.skip_choice = 0;
 sf.auto_choice = 0;
 sf.font = 0;
-
+sf.font_size = 0;
 //sound設定の初期
 
 sf.voicecut = 0;
@@ -150,7 +151,7 @@ sf.sound_origin_volume = 1;
 sf.system_init_flag=1;
 sound_master_func();
 [endscript]
-[eval exp="tf.previous_font_face='ロダン'"]
+[eval exp="f.previous_font_face='ロダン'"]
 [eval exp="kag.chDefaultFace = tf.previous_font_face"]
 [eval exp="kag.setMessageLayerUserFont()"]
 [current layer="message6"]

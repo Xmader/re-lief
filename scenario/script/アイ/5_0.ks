@@ -17,7 +17,7 @@
 @frame_in time=1000
 
 @wait time=1000
-;■雫さんの指定でS08aに
+;■S08aに
 @bg src=第一地区/桜公園_昼
 @bgm src=S08a
 @ese src=SC_1_03_D
@@ -516,5 +516,5 @@
 @wait time=1000
 
 ;//Next
-[jump storage="scenario/script/アイ/5_1x.ks"]
+[jump storage="script/アイ/5_1x.ks"]
 

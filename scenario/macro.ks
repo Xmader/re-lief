@@ -9,7 +9,7 @@
 
 ;//背景マクロ
 [macro name="bg"]
-	[eval exp="tf.path='BG/'+mp.src"]
+	[eval exp="tf.path=mp.src"]
 @eval exp="flagbg(mp)"
 	[backlay]
 	[image layer=%layer|base storage=&tf.path page=back]
@@ -32,7 +32,7 @@
 
 ;//CGマクロ
 [macro name="cg"]
-	[eval exp="tf.path='CG/'+mp.src"]
+	[eval exp="tf.path=mp.src"]
 	[backlay]
 	@eval exp="flagcg(mp)"
 	@eval exp="flaghinako(mp)"
@@ -585,7 +585,7 @@ function drawButtonCaption(num, caption, size)
 
 ;//ノイズマクロ
 [macro name="noisein"]
-	[eval exp="tf.path='CG/'+mp.src"]
+	[eval exp="tf.path=mp.src"]
 	[backlay]
 	[image layer=%layer|0 storage=&tf.path page=back mode=transp visible=true top=0 left=0]
 	[trans time=%time|500 method=%method|crossfade]
@@ -594,7 +594,7 @@ function drawButtonCaption(num, caption, size)
 
 ;//ノイズ消しマクロ
 [macro name="noiseout"]
-	[eval exp="tf.path='CG/'+mp.src"]
+	[eval exp="tf.path=mp.src"]
 	[backlay]
 	[image layer=%layer|0 storage=&tf.path page=back visible=false top=0 left=0]
 	[trans time=%time|500 method=%method|crossfade]
@@ -644,7 +644,8 @@ function drawButtonCaption(num, caption, size)
 	[layopt layer=message0 visible=false page=back]
 	[current layer=message1]
 	[position visible=true layer=message1 page=fore left=210 top=500 width=860 height=190 opacity=0 marginl=60 margint=45 marginr=60 marginb=45]
-	[deffont face=ニューシネマ color=0xffffff edge=true edgecolor=0x777777]
+	[deffont face=ニューシネマ color=0xffffff edge=true edgecolor=0x101010 cond="sf.font_size==0"]
+	[deffont face=ニューシネマ20 color=0xffffff edge=true edgecolor=0x101010 cond="sf.font_size==1"]
 	[resetfont]
 	[eval exp="kag.current.edgeExtent = 2"]
 	[eval exp="kag.current.edgeEmphasis =2048"]
@@ -655,6 +656,9 @@ function drawButtonCaption(num, caption, size)
 	[if exp="kag.skipMode<3 && 0<=kag.autoMode"]
 		[eval exp="dockIn(systembutton_object.y)" cond="!sf.dock"]
 		[wait time=500 canskip=false]
+	[else]
+		[eval exp="dockIn(systembutton_object.y)" cond="!sf.dock"]
+		[wait time=650 canskip=false]
 	[endif]
 	[wait time=650 canskip=false cond="3<=kag.skipMode"]
 [endmacro]
@@ -664,6 +668,9 @@ function drawButtonCaption(num, caption, size)
 	[if exp="kag.skipMode<3 && 0<=kag.autoMode"]
 		[eval exp="dockIn(systembutton_object.y)" cond="!sf.dock"]
 		[wait time=500 canskip=false]
+	[else]
+		[eval exp="dockIn(systembutton_object.y)" cond="!sf.dock"]
+		[wait time=650 canskip=false]
 	[endif]
 	[wait time=650 canskip=false cond="3<=kag.skipMode"]
 [endmacro]
@@ -688,6 +695,9 @@ function drawButtonCaption(num, caption, size)
 
 
 [macro name="catch"]
+	[deffont face=ニューシネマ color=0xffffff edge=true edgecolor=0x101010 cond="sf.font_size==0 && kag.current==kag.fore.messages[1]"]
+	[deffont face=ニューシネマ20 color=0xffffff edge=true edgecolor=0x101010 cond="sf.font_size==1 && kag.current==kag.fore.messages[1]"]
+	[resetfont]
 [eval exp="tf.text=mp.text"]
 [call storage="chCtrl.ks"]
 [endmacro]
@@ -719,5 +729,16 @@ function drawButtonCaption(num, caption, size)
 	[wf buf=19]
 	[wf buf=20]
 	[wait time="500" canskip=false cond="kag.skipMode<=2 && kag.autoMode < 1 && sf.bgmauto==0"]
+[endmacro]
+
+[macro name="rb"]
+	[if exp="kag.current==kag.fore.messages[0]"]
+	[font rubyoffset=2 cond="sf.font_size==0 || sf.font_size===void"]
+	[font rubyoffset=3 cond="sf.font_size==1"]
+	[else]
+	[font rubyoffset=5 cond="sf.font_size==0 || sf.font_size===void"]
+	[font rubyoffset=10 cond="sf.font_size==1"]
+	[endif]
+	[ruby text=%text]
 [endmacro]
 [return]

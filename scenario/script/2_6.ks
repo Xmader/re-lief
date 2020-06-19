@@ -1616,22 +1616,22 @@
 [s]
 
 *choice2_6_1
-[jump storage="scenario/script/2_6_選択１.ks"]
+[jump storage="script/2_6_選択１.ks"]
 [s]
 
 *choice2_6_2
 [eval exp="f.ruka_root_flag=f.ruka_root_flag+1"]
-[jump storage="scenario/script/2_6_選択２.ks"]
+[jump storage="script/2_6_選択２.ks"]
 [s]
 
 *choice2_6_3
 [eval exp="f.momo_root_flag=f.momo_root_flag+1"]
-[jump storage="scenario/script/2_6_選択３.ks"]
+[jump storage="script/2_6_選択３.ks"]
 [s]
 
 *choice2_6_4
 [eval exp="f.ai_root_flag=2"]
-[jump storage="scenario/script/2_6_選択４.ks"]
+[jump storage="script/2_6_選択４.ks"]
 [s]
 
 ;////////////////////////////////シナリオエンド///
@@ -1642,4 +1642,4 @@
 
 ;//////////////////////////////////セットダウン///
 ;// NEXT //
-;[jump storage="scenario/script/2_共通/2_6_選択合流.ks"]
+;[jump storage="script/2_共通/2_6_選択合流.ks"]

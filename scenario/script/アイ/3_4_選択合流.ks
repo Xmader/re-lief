@@ -172,7 +172,7 @@
 ;@bgm1 src=S03 volume=0
 ;@bg src=第一地区/海岸
 @bgm1 src=S03 volume=0.5
-@blurin time=1000 size=3
+@blurin time=500 size=3
 視線を外し、海を眺める。
 @lr
 *save|青春ブルースカイ！
@@ -242,8 +242,13 @@
 @lr
 *save|青春ブルースカイ！
 @mr
+
+@blurout
+@wait time=500 canskip=false cond="kag.skipMode<=1"
+@bg src=第一地区/海岸 method=crossfade time =10
 @bgm1 src=S03 volume=1
-@blurout time=200
+
+
 @chara base=アイ/アイ02 body=水着 mayu=通常2 eye=半目 mouth=空き5 pos=c
 @name src=アイ
 @v src=ai0242 buf=6
@@ -448,4 +453,4 @@
 ;@all_layer_out
 
 ;//Next
-[jump storage="scenario/script/アイ/3_5.ks"]
+[jump storage="script/アイ/3_5.ks"]

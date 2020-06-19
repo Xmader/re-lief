@@ -1642,8 +1642,8 @@
 @name src=流花
 @v src=ruka0025 buf=4
 @hbutton exp="kag.se[21].volume2=kag.se[4].volume2,kag.se[21].play(%['storage'=>'sound/voice/流花/ruka0025'])" graphic=image/backlog/PLAY_button idx=7
-@catch text=「じゃ、ももの自己紹介の番、でいいのかな。先に行っておくけど、この子あたしよりすごいからね」
-「じゃ、ももの自己紹介の番、でいいのかな。先に行っておくけど、この子あたしよりすごいからね」
+@catch text=「じゃ、ももの自己紹介の番、でいいのかな。先に言っておくけど、この子あたしよりすごいからね」
+「じゃ、ももの自己紹介の番、でいいのかな。先に言っておくけど、この子あたしよりすごいからね」
 [endvoice]
 @lr
 *label|グループ結成
@@ -4633,6 +4633,7 @@
 だから、技術の進歩、もしくは社会の変化について、今の私は――
 @lr
 @cinema_mode_out
+;@wait time=500 canskip=false
 *label|グループ結成
 @mr
 
@@ -4653,16 +4654,18 @@
 @wait time=500 canskip=false
 [sysbtopt forevisible=true backvisible=true]
 [else]
+;@wait time=500 canskip=false
 [sysbtopt forevisible=true backvisible=true]
+;@wait time=500 canskip=false
 [endif]
 [s]
 
 *choice1
-[jump storage="scenario/script/1_2_choice_1.ks"]
+[jump storage="script/1_2_choice_1.ks"]
 [s]
 
 *choice2
-[jump storage="scenario/script/1_2_choice_2.ks"]
+[jump storage="script/1_2_choice_2.ks"]
 [s]
 
 ;////////////////////////////////シナリオエンド///
@@ -4673,4 +4676,4 @@
 
 ;//////////////////////////////////セットダウン///
 ;// NEXT //
-;[jump storage="scenario/script/1_2_choice_after.ks"]
+;[jump storage="script/1_2_choice_after.ks"]

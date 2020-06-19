@@ -164,4 +164,4 @@
 ;要検討する必要がある。右クリックの設定
 [rclick enabled=true name=default call=false jump=false]
 @bgmout
-[jump storage="scenario/script/start.ks"]
+[jump storage="script/start.ks"]

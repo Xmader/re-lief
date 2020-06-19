@@ -23,7 +23,7 @@
 [call storage=system_init.ks target=*nomessage]
 [current layer="&f.message" page=fore]
 [position layer="&f.message" visible=true]
-[image storage="image/system/sound/base" layer=base page=fore]
+[image storage="image/system/sound/sound" layer=base page=fore]
 [locate x=438 y=205]
 [button onleave="sse_stop()" onenter="sse_play(true)" graphic= "image/system/button/window_off.png" storage=system_menu.ks target=*window hint="表示設定"]
 [locate x=560 y=205]

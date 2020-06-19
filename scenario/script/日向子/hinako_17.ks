@@ -102,8 +102,9 @@
 @lr
 *save|３つ目の選択
 @mr
-@catch text=嬉しさのあまり、私は昔だったらひとりで行く事ができなかったくらい距離を、手紙の差し出し人のところまで小旅行してしまった。
-嬉しさのあまり、私は昔だったらひとりで行く事ができなかったくらい距離を、手紙の差し出し人のところまで小旅行してしまった。
+@catch text=嬉しさのあまり、私は昔だったらひとりで行く事ができなかった距離を、手紙の差し出し人のところまで小旅行してしまった。
+嬉しさのあまり、私は昔だったらひとりで行く事ができなかった距離を、手紙の差し出し人のところまで小旅行してしまった。
+;■テキストミス修正：嬉しさのあまり、私は昔だったらひとりで行く事ができなかった距離を、手紙の差し出し人のところまで小旅行してしまった。
 @lr
 *save|３つ目の選択
 @mr
@@ -128,13 +129,13 @@
 @bg src=現実世界/日向子部屋02
 @bgm src=M02a
 @ese src=SC_G_01_D
-
+@cinema_mode_out
+@messagein
+;■ここでシネマモードアウトでお願いします。
 ;@eval exp="System.inform("ボイス置き換え箇所");"
 @name src=日向子
-@noname
 ;@v src=hinako1785 buf=3
 ;@hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1785'])" graphic=image/backlog/PLAY_button idx=7
-@catch text=わぁっ……！
 わぁっ……
 ;[endvoice]
 
@@ -142,9 +143,6 @@
 *save|３つ目の選択
 @mr
 
-
-@cinema_mode_out
-@messagein
 ベランダを開けると、色鮮やかな花が、私を出迎えてくれた。
 @lr
 *save|３つ目の選択
@@ -1104,17 +1102,20 @@
 @mr
 @noch
 
+@musicwait
 
+@bgmout time=2000
+@eseout src=SC_G_01_D
 @bg src=その他/white2 time=1000
-
-
 @cg src=日向子/日向子_エピローグ_01 time=1500
 
 @catch text=私は振り返って、それから、はっきりと言う。
 私は振り返って、それから、はっきりと言う。
+;■ＢＧＭアウトここに変更でお願いします。
 @lr
 *save|３つ目の選択
 @mr
+
 @name src=日向子
 @noname
 @v src=hinako1823 buf=3
@@ -1125,10 +1126,7 @@
 *save|３つ目の選択
 @mr
 
-@musicwait
 
-@bgmout time=2000
-@eseout src=SC_G_01_D
 @cinema_mode_out
 @all_out
 @musicwait
@@ -1160,6 +1158,6 @@ kag.movies[1].audioVolume=f.movie_v;
 [wait time=300 canskip=false]
 ;// NEXT //
 [eval exp="sf.hinako_memories_flag=1"]
-[jump storage="scenario/script/title.ks"]
+[jump storage="title.ks"]
 
 

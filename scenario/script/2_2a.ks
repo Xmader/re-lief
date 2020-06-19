@@ -750,11 +750,11 @@
 [s]
 
 *choice2_2a_1
-[jump storage="scenario/script/2_2a_選択１.ks"]
+[jump storage="script/2_2a_選択１.ks"]
 [s]
 
 *choice2_2a_2
-[jump storage="scenario/script/2_2a_選択２.ks"]
+[jump storage="script/2_2a_選択２.ks"]
 [s]
 
 ;////////////////////////////////シナリオエンド///
@@ -765,4 +765,4 @@
 
 ;//////////////////////////////////セットダウン///
 ;// NEXT //
-;[jump storage="scenario/script/2_2.ks"]
+;[jump storage="script/2_2.ks"]

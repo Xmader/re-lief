@@ -1,4 +1,4 @@
-﻿;--------------------------------------------------------------------------------
+;--------------------------------------------------------------------------------
 ;;Re:Lief　-親愛なるあなたへ-
 ;;シーン番号：3_3
 ;;シーンタイトル：オープンキャンパスin來夢学園
@@ -418,7 +418,7 @@
 @name src=アイ
 @v src=ai0147 buf=6
 @hbutton exp="kag.se[21].volume2=kag.se[6].volume2,kag.se[21].play(%['storage'=>'sound/voice/アイ/ai0147'])" graphic=image/backlog/PLAY_button idx=7
-「ふっふーん、たとえ”昔”がなくなって、司のことはいくらかは知ってるつもりだよ」
+「ふふっふーん、たとえ”昔”がなくなっても、司のことはいくらかは知ってるつもりだよ」
 [endvoice]
 @lr
 *save|オープンキャンパスin來夢学園
@@ -693,7 +693,7 @@
 @name src=理人
 @v src=rihito0107 buf=10
 @hbutton exp="kag.se[21].volume2=kag.se[10].volume2,kag.se[21].play(%['storage'=>'sound/voice/理人/rihito0107'])" graphic=image/backlog/PLAY_button idx=7
-「ボクは理人。ちなみにリヒト・ヴァルトリーク・フューラーと呼ばれたり呼ばれてなかったりするよ」
+「ボクは理人。ちなみにリヒト・ヴァルトレイク・フューラーと呼ばれたり呼ばれてなかったりするよ」
 [endvoice]
 @lr
 *save|オープンキャンパスin來夢学園
@@ -2320,7 +2320,7 @@
 *save|オープンキャンパスin來夢学園
 @mr
 
-なんだろう、箒木さんにも名前で呼んでいいよとか、そういう気を使うべきなのだろうか。
+なんだろう、箒木さんにも名前で呼んでいいよとか、そういう気を遣うべきなのだろうか。
 @lr
 *save|オープンキャンパスin來夢学園
 @mr
@@ -4282,7 +4282,7 @@
 
 ;//ルビの大きさや距離の調節必要
 @catch text=世界が分裂するかのような衝撃が、新田司を貫いた――。
-世界が[ruby text="・"]分[ruby text="・"]裂[ruby text="・"]す[ruby text="・"]る[ruby text="・"]か[ruby text="・"]の[ruby text="・"]よ[ruby text="・"]うな衝撃が、[font rubysize=7 rubyoffset=2][ruby text="                   俺と僕と"]新田司を貫いた――。
+世界が[rb text="・"]分[rb text="・"]裂[rb text="・"]す[rb text="・"]る[rb text="・"]か[rb text="・"]の[rb text="・"]よ[rb text="・"]うな衝撃が、[rb text="俺"]新[rb text="と"]田[rb text="僕と"]司を貫いた――。
 @lr
 *save|オープンキャンパスin來夢学園
 @mr
@@ -4294,4 +4294,4 @@
 @cinema_mode_out
 
 ;//Next
-[jump storage="scenario/script/アイ/3_4.ks"]
+[jump storage="script/アイ/3_4.ks"]

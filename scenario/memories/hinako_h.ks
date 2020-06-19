@@ -46,7 +46,7 @@
 *label|日向子H
 @mr
 
-
+@musicwait
 @chara base=夏奈/夏奈01 body=デフォルト mayu=通常 eye=通常 mouth=ワ layer=1 pos=c
 @name src=夏奈
 @v src=h_nakamura0001_a buf=13
@@ -220,8 +220,7 @@
 @lr
 *label|日向子H
 @mr
-
-
+@musicwait
 @chara base=日向子/日向子01 body=私服 mayu=通常 eye=通常 mouth=空き2 layer=1 pos=c time=1000
 @name src=日向子
 @v src=h_hinako0003 buf=3
@@ -379,7 +378,7 @@
 *label|日向子H
 @mr
 @noname
-そんな考えにふけていると、声を掛けられて我に返る。
+そんな考えにふけっていると、声を掛けられて我に返る。
 @lr
 *label|日向子H
 @mr
@@ -489,6 +488,7 @@
 @mr
 
 @musicwait
+
 
 @bgm src=S10 time=500 wait=false
 @bgm1out time=500 wait=false
@@ -1646,8 +1646,8 @@
 
 @name src=司
 @noname
-@catch text=「……うん、暖かいよ」
-「……うん、暖かいよ」
+@catch text=「……うん、温かいよ」
+「……うん、温かいよ」
 @lr
 *label|日向子H
 @mr
@@ -3479,7 +3479,7 @@
 
 @bgmout
 
-
+@musicwait
 
 @cg src=体験版日向子H/日向子_日向子：ストーリー02_21
 @name src=日向子

@@ -371,8 +371,9 @@
 @lr
 *save|盤上になぞらえて
 @mr
+@noch
 @bgmout
-
+;■ここで、手前の立ち絵が前面に残ったままワイプがかかるので、修正お願いします。
 @bg src=その他/black
 @bg src=学園/寮部屋01_夜 method=universal rule=右回り
 一通り操作方法をふたりに教えた後。
@@ -436,11 +437,13 @@
 @lr
 *save|盤上になぞらえて
 @mr
-
+;■ここで時間経過ワイプインお願いします。
 @musicwait
 
 @bgmout
 @noch
+@bg src=その他/black
+@bg src=学園/寮部屋01_夜 method=universal rule=右回り
 
 …………
 @lr
@@ -1113,9 +1116,14 @@
 @mr
 
 あながち、日向子『先生』は現実でも違和感のないそれらしさがあるなと、そう感じた。
+;■ここで時間経過ワイプお願いします。
+;■また、その際に立ち絵の初期化もお願いします。
 @lr
 *save|盤上になぞらえて
 @mr
+@noch
+@bg src=その他/black
+@bg src=学園/寮部屋01_夜 method=universal rule=右回り
 @name src=司
 「無職……」
 @lr
@@ -1377,7 +1385,7 @@
 @name src=日向子
 @v src=hinako1179 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1179'])" graphic=image/backlog/PLAY_button idx=7
-「うん、確かにそうだよね。斉藤さんも、同じようなこと言っていた気がする」
+「うん、確かにそうだよね。斎藤さんも、同じようなこと言っていた気がする」
 [endvoice]
 @lr
 *save|盤上になぞらえて
@@ -1959,4 +1967,4 @@
 @musicwait
 
 ;// NEXT //
-[jump storage="scenario/script/日向子/hinako_6.ks"]
+[jump storage="script/日向子/hinako_6.ks"]

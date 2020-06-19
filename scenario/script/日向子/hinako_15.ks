@@ -1316,4 +1316,4 @@
 @all_layer_out
 @bg src=その他/black time=1000
 ;//Next
-[jump storage="scenario/script/日向子/hinako_16.ks"]
+[jump storage="script/日向子/hinako_16.ks"]

@@ -620,6 +620,7 @@ kag.movies[1].audioVolume=f.movie_v;
 [wait time=1000 canskip=false]
 [playvideo slot=1]
 [eval exp="sf.can_skip_movie=true"]
+@eval exp="sf.daisybell_movie_flag=1"
 [wv canskip=false slot=1]
 [wait time=1000 canskip=false]
 ;//wvのcanskip=trueにするとスキップ可能
@@ -1432,8 +1433,9 @@ kag.movies[1].audioVolume=f.movie_v;
 @mr
 
 @ese src=SC_G_01_N
-@bg src=学園/音楽室
-@noch
+@bg src=その他/black time=1000
+@bg src=学園/音楽室 method=universal rule=円形(中外) time=2000
+
 @noname
 來夢学園、その音楽室だった。
 @lr
@@ -1588,7 +1590,8 @@ kag.movies[1].audioVolume=f.movie_v;
 @name src=ユウ
 @v src=yuu0114 buf=7
 @hbutton exp="kag.se[21].volume2=kag.se[7].volume2,kag.se[21].play(%['storage'=>'sound/voice/ユウ/yuu0114'])" graphic=image/backlog/PLAY_button idx=7
-「司は、そちらのピアノをどうぞ。こちらは、一回り小さいですから」
+「司は、そちらのピアノをどうぞ」
+;■テキスト修正「司は、そちらのピアノをどうぞ」
 [endvoice]
 @lr
 *save|ユウ
@@ -1902,4 +1905,4 @@ kag.movies[1].audioVolume=f.movie_v;
 
 ;//////////////////////////////////セットダウン///
 ;// NEXT //
-[jump storage="scenario/script/アイ/6_4.ks"]
+[jump storage="script/アイ/6_4.ks"]

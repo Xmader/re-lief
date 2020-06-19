@@ -123,7 +123,7 @@
 *save|三国紗希
 @mr
 
-ここでフラグが立たないと、後に学校で関係が進展しないじゃないか。
+ここでフラグが立たないと、後に学園で関係が進展しないじゃないか。
 @lr
 *save|三国紗希
 @mr
@@ -713,7 +713,8 @@
 @name src=もも
 @v src=momo0399 buf=5
 @hbutton exp="kag.se[21].volume2=kag.se[5].volume2,kag.se[21].play(%['storage'=>'sound/voice/もも/momo0399'])" graphic=image/backlog/PLAY_button idx=7
-「それにしても不思議でですよねぇ……なので、最近はこの辺りの生態調査など行ってました」
+「それにしても不思議ですよねぇ……なので、最近はこの辺りの生態調査など行ってました」
+;■テキストミス修正「それにしても不思議ですよねぇ……なので、最近はこの辺りの生態調査など行ってました」
 [endvoice]
 @lr
 *save|三国紗希
@@ -1443,7 +1444,8 @@
 @name src=日向子
 @v src=hinako1710 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1710'])" graphic=image/backlog/PLAY_button idx=7
-「……司くん、夢の中でまでミリャちゃんとイチャイチャしてたんだ」
+「……司くん、夢の中までミリャちゃんとイチャイチャしてたんだ」
+:■テキストミス修正「……司くん、夢の中までミリャちゃんとイチャイチャしてたんだ」
 [endvoice]
 @lr
 *save|三国紗希
@@ -1554,9 +1556,12 @@
 @noch
 
 そうして、その後は今日学園であったことなどをミリャに語り聞かせながら過ごした。
+;■時間経過挿入
 @lr
 *save|三国紗希
 @mr
+@bg src=その他/black
+@bg src=第一地区/病院_昼 method=universal rule=右回り
 @name src=司
 「日向子、そろそろ行こうか」
 @lr
@@ -1687,4 +1692,4 @@
 @all_layer_out
 @blackout time=300
 ;//Next
-[jump storage="scenario/script/日向子/hinako_14.ks"]
+[jump storage="script/日向子/hinako_14.ks"]

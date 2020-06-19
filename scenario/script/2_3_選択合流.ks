@@ -103,4 +103,4 @@
 
 ;//////////////////////////////////セットダウン///
 ;// NEXT //
-[jump storage="scenario/script/2_4.ks"]
+[jump storage="script/2_4.ks"]

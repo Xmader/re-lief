@@ -941,4 +941,4 @@
 @blackout wait=1500
 @musicwait
 [wait time=300 canskip=false]
-[jump storage="scenario/script/もも/momo_8.ks"]
+[jump storage="script/もも/momo_8.ks"]

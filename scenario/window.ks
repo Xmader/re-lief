@@ -22,7 +22,7 @@
 [call storage=system_init.ks target=*nomessage]
 [current layer="&f.message" page=fore]
 [position layer="&f.message" visible=true]
-[image storage="image/system/window/base" layer=base page=fore]
+[image storage="image/system/window/window" layer=base page=fore]
 [locate x=438 y=205]
 [button onleave="sse_stop()" onenter="sse_play(true)" graphic= "image/system/button/window_on.png" hint="表示設定"]
 [locate x=560 y=205]
@@ -62,9 +62,9 @@
 [locate x=506 y=290]
 [button graphic= "image/system/button/check_off.png" onenter="hover_on('【ウィンドウサイズ】 ','「ウィンドウ表示」を選択時の表示サイズを選択できます。');sse_play(true);" onleave="sse_stop();hover_off()" target=*size960 cond="sf.size==0"]
 [locate x=386 y=290]
-[button graphic= "image/system/button/check_off.png" onenter="hover_on('【ウィンドウサイズ】 ','「ウィンドウ表示」を選択時の表示サイズを選択できます。');sse_play(true);" onleave="sse_stop();hover_off()" target=*size1280 cond="sf.size==1"]
+[button graphic= "image/system/button/check_off.png" onenter="hover_on('【ウィンドウサイズ】 ','「ウィンドウ表示」を選択時の表示サイズを選択できます。');sse_play(true);" onleave="sse_stop();hover_off()" target=*size1280 cond="sf.size==2"]
 [locate x=506 y=290]
-[button graphic= "image/system/button/check_on.png" onenter="hover_on('【ウィンドウサイズ】 ','「ウィンドウ表示」を選択時の表示サイズを選択できます。');sse_play(true);" onleave="sse_stop();hover_off()" cond="sf.size==1"]
+[button graphic= "image/system/button/check_on.png" onenter="hover_on('【ウィンドウサイズ】 ','「ウィンドウ表示」を選択時の表示サイズを選択できます。');sse_play(true);" onleave="sse_stop();hover_off()" cond="sf.size==2"]
 
 
 ;画面エフェクト
@@ -149,7 +149,7 @@ hover_on('設定項目にカーソルを合わせると、設定できる内容�
 [eval exp="sf.window=0"]
 [eval exp="kag.onWindowedMenuItemClick(kag)"]
 [iscript]
-if(sf.size==1){
+if(sf.size==2){
 kag.primaryLayer.width = 1280;
 kag.primaryLayer.height = 720;
 kag.setZoom(54,72);
@@ -163,7 +163,7 @@ kag.innerHeight = 540;
 *fullscreen
 [eval exp="sf.window=1"]
 [iscript]
-if(sf.size==1)
+if(sf.size==2)
 {
 kag.setZoom(1,1);
 kag.innerWidth = 1280;
@@ -188,7 +188,7 @@ kag.innerHeight = 720;
 [s]
 
 *size960
-[eval exp="sf.size=1"]
+[eval exp="sf.size=2"]
 [iscript]
 if(sf.window==0)
 {

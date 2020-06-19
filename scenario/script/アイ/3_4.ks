@@ -760,11 +760,11 @@
 [s]
 
 *choice3_4_1
-[jump storage="scenario/script/アイ/3_4_選択1.ks"]
+[jump storage="script/アイ/3_4_選択1.ks"]
 [s]
 
 *choice3_4_2
-[jump storage="scenario/script/アイ/3_4_選択2.ks"]
+[jump storage="script/アイ/3_4_選択2.ks"]
 [s]
 
 

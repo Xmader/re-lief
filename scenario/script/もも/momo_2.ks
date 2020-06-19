@@ -2277,4 +2277,4 @@
 @messageout
 @musicwait
 
-[jump storage="scenario/script/もも/momo_3.ks"]
+[jump storage="script/もも/momo_3.ks"]

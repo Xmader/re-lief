@@ -35,7 +35,7 @@
 @frame_in
 [rclick enabled=true name=default call=false jump=false]
 [disablestore store=false restore=false]
-[jump storage=scenario/memories/ruka_h.ks]
+[jump storage=memories/ruka_h.ks]
 [s]
 
 *ruka_omake
@@ -45,7 +45,7 @@
 @frame_in
 [rclick enabled=true name=default call=false jump=false]
 [disablestore store=false restore=false]
-[jump storage=scenario/memories/ruka_omake.ks]
+[jump storage=memories/ruka_omake.ks]
 [s]
 *memories_return
 [call storage="memories_init.ks" target=*layer_freeimage]

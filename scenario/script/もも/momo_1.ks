@@ -2309,4 +2309,4 @@
 @eseout src=SC_R_06 time=1000
 @messageout
 @all_layer_out wait=2000
-[jump storage="scenario/script/もも/momo_2.ks"]
+[jump storage="script/もも/momo_2.ks"]

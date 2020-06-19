@@ -31,7 +31,7 @@ kag.movies[1].audioVolume=f.movie_v;
 [freeimage layer=1 page=fore visible=false]
 ;//////////////////////////////シナリオスタート///
 @frame_out
-
+@eval exp="sf.plologe_movie_flag=1"
 @init
 *label|プロローグ
 ;/////////////////////////////////////eyechatch///
@@ -978,4 +978,4 @@ kag.movies[1].audioVolume=f.movie_v;
 ;//////////////////////////////////セットダウン///
 
 ;// NEXT //
-[jump storage="scenario/script/1_1.ks"]
+[jump storage="script/1_1.ks"]

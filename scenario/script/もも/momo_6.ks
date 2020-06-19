@@ -532,7 +532,7 @@
 @mr
 @chara base=もも/もも02 body=制服 mayu=驚き eye=見開き mouth=笑い pos=c
 @noname
-ゴマッドレッシングと、その小袋にはそう書かれていた。
+ゴマドレッシングと、その小袋にはそう書かれていた。
 @lr
 *save|恋人たちの見る景色
 @mr
@@ -2184,7 +2184,7 @@
 @name src=トト
 @v src=toto0197 buf=14
 @hbutton exp="kag.se[21].volume2=kag.se[14].volume2,kag.se[21].play(%['storage'=>'sound/voice/トト/toto0197'])" graphic=image/backlog/PLAY_button idx=7
-「司、空気呼んでくださいよ、もうっ」
+「司、空気読んでくださいよ、もうっ」
 [endvoice]
 @lr
 *save|恋人たちの見る景色
@@ -2272,4 +2272,4 @@
 @blackout time=2000
 
 ;//Next
-[jump storage="scenario/script/もも/momo_7.ks"]
+[jump storage="script/もも/momo_7.ks"]

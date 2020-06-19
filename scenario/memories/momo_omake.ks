@@ -2247,6 +2247,7 @@
 [wait time=40 canskip=false]
 [image layer=8 storage=BG/その他/white2 page=fore visible=true top=0 left=0]
 [wait time=40 canskip=false]
+[freeimage layer=8]
 @lr
 *save|ももおまけH
 @mr

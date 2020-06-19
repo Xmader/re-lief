@@ -46,7 +46,7 @@
 @frame_in
 [rclick enabled=true name=default call=false jump=false]
 [disablestore store=false restore=false]
-[jump storage=scenario/memories/ai_h.ks]
+[jump storage=memories/ai_h.ks]
 [s]
 
 *yuu_h
@@ -56,7 +56,7 @@
 @frame_in
 [rclick enabled=true name=default call=false jump=false]
 [disablestore store=false restore=false]
-[jump storage=scenario/memories/yuu_h.ks]
+[jump storage=memories/yuu_h.ks]
 [s]
 
 *ai_omake
@@ -66,7 +66,7 @@
 @frame_in
 [rclick enabled=true name=default call=false jump=false]
 [disablestore store=false restore=false]
-[jump storage=scenario/memories/ai_omake.ks]
+[jump storage=memories/ai_omake.ks]
 [s]
 
 
@@ -77,7 +77,7 @@
 @frame_in
 [rclick enabled=true name=default call=false jump=false]
 [disablestore store=false restore=false]
-[jump storage=scenario/memories/yuu_omake.ks]
+[jump storage=memories/yuu_omake.ks]
 [s]
 
 *memories_return

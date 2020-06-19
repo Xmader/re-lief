@@ -2073,5 +2073,5 @@
 
 ;//////////////////////////////////セットダウン///
 ;// NEXT //
-[jump storage="scenario/script/アイ/4_3.ks"]
+[jump storage="script/アイ/4_3.ks"]
 

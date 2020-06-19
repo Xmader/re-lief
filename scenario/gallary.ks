@@ -52,6 +52,8 @@ for(var i=0;i<kag.numMessageLayers;i++)
 @button onleave="sse_stop()" onenter="sse_play()"  graphic="image/extra/gallary/background" exp="kag.process('gallary_bg.ks')"
 @locate x=833 y=201
 @button onleave="sse_stop()" onenter="sse_play()"  graphic="image/extra/gallary/background" exp="kag.process('gallary_bg.ks')"
+@locate x=638 y=647 
+@button onleave="sse_stop()" onenter="sse_play()"  graphic="image/extra/movie/movie" target=*movie
 @locate x=866 y=647 
 @button onleave="sse_stop()" onenter="sse_play()"  graphic="image/extra/gallary/memories" target=*memories
 @locate x=980 y=647 
@@ -182,7 +184,10 @@ for(var i=0;i<kag.numMessageLayers;i++)
 @call storage=gallary.ks target=*draw
 @s
 
-
+*movie
+@tempload place=1 bgm=false
+[jump storage=extra_menu.ks target=*movie]
+[s]
 
 *memories
 @tempload place=1 bgm=false

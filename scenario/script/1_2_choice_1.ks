@@ -52,4 +52,4 @@
 
 ;//////////////////////////////////セットダウン///
 ;// NEXT //
-[jump storage="scenario/script/1_2_choice_after.ks"]
+[jump storage="script/1_2_choice_after.ks"]

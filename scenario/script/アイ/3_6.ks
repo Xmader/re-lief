@@ -1098,7 +1098,8 @@
 
 @cg src=その他/その他_相克_03
 @noch
-最後の瞬間、鮮血に彩られたその記憶は、間違いなく[font  rubyoffset=2][ruby text="・"]僕のものだ。
+@catch text=最後の瞬間、鮮血に彩られたその記憶は、間違いなく僕のものだ。
+最後の瞬間、鮮血に彩られたその記憶は、間違いなく[rb text="・"]僕のものだ。
 @lr
 *save|新田司´
 @mr
@@ -1243,7 +1244,7 @@
 @mr
 
 @eseout src=SC_G_01_D
-必然、人付き合いも苦手になり、学校へ通う頃には、毎日はただただ辛いものでしかなくなっていた。
+必然、人付き合いも苦手になり、学園へ通う頃には、毎日はただただ辛いものでしかなくなっていた。
 @lr
 *save|新田司´
 @mr
@@ -1292,7 +1293,7 @@
 *save|新田司´
 @mr
 
-母親が在籍していた研究所内でしか会えない、当時僕と同じくらいの[font rubyoffset=1][ruby text="・"]白[ruby text="・"]い[ruby text="・"]女[ruby text="・"]の[ruby text="・"]子。
+母親が在籍していた研究所内でしか会えない、当時僕と同じくらいの[rb text="・"]白[rb text="・"]い[rb text="・"]女[rb text="・"]の[rb text="・"]子。
 @lr
 *save|新田司´
 @mr
@@ -1824,4 +1825,4 @@
 
 
 ;//Next
-[jump storage="scenario/script/アイ/3_6H.ks"]
+[jump storage="script/アイ/3_6H.ks"]

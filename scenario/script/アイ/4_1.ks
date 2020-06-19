@@ -1113,7 +1113,7 @@ AIが自ら学習した「猫」という概念と、その画像。
 @name src=義貴
 @v src=mikuni0223 buf=12
 @hbutton exp="kag.se[21].volume2=kag.se[12].volume2,kag.se[21].play(%['storage'=>'sound/voice/三国/mikuni0223'])" graphic=image/backlog/PLAY_button idx=7
-「まったく、いつも巻き込まれてばかりだな、俺たち」
+「いつも巻き込まれてばかりだな、俺たち」
 [endvoice]
 @lr
 *save|過去Ⅰ
@@ -4176,4 +4176,4 @@ AIが自ら学習した「猫」という概念と、その画像。
 @cinema_mode_out
 @messageout
 ;//Next
-[jump storage=scenario/script/アイ/5_2x.ks]
+[jump storage="script/アイ/5_2x.ks"]

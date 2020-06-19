@@ -2265,4 +2265,4 @@
 
 @bg src=その他/black wait=2000
 [wait time=300 canskip=false]
-[jump storage="scenario/script/もも/momo_9.ks"]
+[jump storage="script/もも/momo_9.ks"]

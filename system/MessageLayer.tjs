@@ -1285,21 +1285,27 @@ class MessageLayer extends KAGLayer
 			chColor = 16777215;
 		}
 		if(kag.current==kag.fore.messages[1]){
-		if(tf.len3!=0&&ll.top==99&&lineLayerPos==4){
-			if(tf.len3<35)
-				dx = dx+(34-tf.len3)/2*cw+cw;
-		}
-		else if(tf.len2!=0&&ll.top==67&&lineLayerPos==4){
-			if(tf.len2<35)
-				dx = dx+(34-tf.len2)/2*cw+cw;
-		}
-		else if(tf.len!=0&&ll.top==35&&lineLayerPos==4){
-			if(tf.len<35)
-				dx = dx+(34-tf.len)/2*cw+cw;
-		}
+			if(tf.len3!=0&&ll.top==99&&lineLayerPos==4){
+				if(tf.len3<35&&sf.font_size===0)
+					dx = dx+(34-tf.len3)/2*cw+cw;
+				else if(tf.len3<29&&sf.font_size===1)
+					dx = dx+(28-tf.len3)/2*cw+cw;
+			}
+			else if(tf.len2!=0&&ll.top==67&&lineLayerPos==4){
+				if(tf.len2<35&&sf.font_size===0)
+					dx = dx+(34-tf.len2)/2*cw+cw;
+				else if(tf.len2<29&&sf.font_size===1)
+					dx = dx+(28-tf.len2)/2*cw+cw;
+			}
+			else if(tf.len!=0&&ll.top==35&&lineLayerPos==4){
+				if(tf.len<35&&sf.font_size===0)
+					dx = dx+(34-tf.len)/2*cw+cw;
+				else if(tf.len<29&&sf.font_size===1)
+					dx = dx+(28-tf.len)/2*cw+cw;
+			}
 
-		prevdx=dx;
-	}
+			prevdx=dx;
+		}
 
 		if(edge)
 			ll.drawText(dx, dy, ch, chColor, 255, antialiased, edgeEmphasis, edgeColor, edgeExtent, 0, 0); // 文字

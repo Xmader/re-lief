@@ -956,4 +956,4 @@
 
 ;//////////////////////////////////セットダウン///
 ;// NEXT //
-[jump storage="scenario/script/アイ/6_2H.ks"]
+[jump storage="script/アイ/6_2H.ks"]

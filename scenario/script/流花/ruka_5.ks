@@ -771,7 +771,7 @@
 @blackout
 @musicwait
 @bg src=学園/中庭_夜
-@bgm src=N04c
+@bgm src=N04b
 @ese src=SC_G_02_N
 @messagein
 
@@ -2346,4 +2346,4 @@
 
 ;//////////////////////////////////セットダウン///
 ;// NEXT //
-[jump storage="scenario/script/流花/ruka_6.ks"]
+[jump storage="script/流花/ruka_6.ks"]

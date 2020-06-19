@@ -136,7 +136,7 @@
 @name src=夏奈
 @v src=nakamura0004 buf=13
 @hbutton exp="kag.se[21].volume2=kag.se[13].volume2,kag.se[21].play(%['storage'=>'sound/voice/夏奈/nakamura0004'])" graphic=image/backlog/PLAY_button idx=7
-「はい！カップルラブラブパフェだよ！」
+「はい！　カップルラブラブパフェだよ！」
 [endvoice]
 @lr
 *save|これからの選択
@@ -958,4 +958,4 @@
 @all_layer_out
 @blackout time=300
 ;//Next
-[jump storage="scenario/script/日向子/hinako_1401H.ks"]
+[jump storage="script/日向子/hinako_1401H.ks"]

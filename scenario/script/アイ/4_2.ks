@@ -1344,6 +1344,7 @@
 *save|過去Ⅱ
 @mr
 
+@bg src=その他/black time=1000
 @bg src=現実世界/研究室_昼 method=universal rule=右回り
 翌日。
 @lr
@@ -1952,4 +1953,4 @@
 ;@messageout
 
 ;//Next
-[jump storage="scenario/script/アイ/6_1.ks"]
+[jump storage="script/アイ/6_1.ks"]

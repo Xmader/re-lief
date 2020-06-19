@@ -968,7 +968,7 @@
 *save|心の中で形を成したもの
 @mr
 @noname
-それは、トトを消した犯人を探すくらいしかないだろう。
+それは、トトちゃんを消した犯人を探すくらいしかないだろう。
 @lr
 *save|心の中で形を成したもの
 @mr
@@ -1408,7 +1408,7 @@
 *save|心の中で形を成したもの
 @mr
 @noname
-益対のない会話を繰り広げながら、野菜炒め定食を頬張る。
+益体のない会話を繰り広げながら、野菜炒め定食を頬張る。
 @lr
 *save|心の中で形を成したもの
 @mr
@@ -1891,4 +1891,4 @@
 @cinema_mode_out
 ;//Next
 [wait time=300 canskip=false]
-[jump storage="scenario/script/もも/momo_10.ks"]
+[jump storage="script/もも/momo_10.ks"]

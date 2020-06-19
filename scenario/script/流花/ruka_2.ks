@@ -149,7 +149,7 @@
 @name src=もも
 @v src=momo1062 buf=5
 @hbutton exp="kag.se[21].volume2=kag.se[5].volume2,kag.se[21].play(%['storage'=>'sound/voice/もも/momo1062'])" graphic=image/backlog/PLAY_button idx=7
-「んもー、気を使わなくってもいいですってば。今度の食事、サラダが出た時に食べてくれるだけでいいですから！」
+「んもー、気を遣わなくってもいいですってば。今度の食事、サラダが出た時に食べてくれるだけでいいですから！」
 @lr
 *save|資格取得へ
 @mr
@@ -1637,4 +1637,4 @@
 
 ;//////////////////////////////////セットダウン///
 ;// NEXT //
-[jump storage="scenario/script/流花/ruka_3.ks"]
+[jump storage="script/流花/ruka_3.ks"]

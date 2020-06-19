@@ -707,7 +707,7 @@
 *save|流花H
 @mr
 @noname
-そうして、俺は太腿をまさぐっていた指先を、さらに奥の方へと進めていく。。
+そうして、俺は太腿をまさぐっていた指先を、さらに奥の方へと進めていく。
 @lr
 *save|流花H
 @mr
@@ -1115,7 +1115,7 @@
 @name src=もも
 @v src=h_momo0255 buf=5
 @hbutton exp="kag.se[21].volume2=kag.se[5].volume2,kag.se[21].play(%['storage'=>'sound/voice/もも/h_momo0255'])" graphic=image/backlog/PLAY_button idx=7
-「んー？どことなく運動してきたような汗掻きっぷりですが……」
+「んー？　どことなく運動してきたような汗掻きっぷりですが……」
 ;「んー……顔は赤いし、息が上がってますね。薄っすらと汗までかいて……何か運動でもしてたんです？」
 [endvoice]
 @lr
@@ -1229,7 +1229,7 @@
 @name src=もも
 @v src=h_momo0260 buf=5
 @hbutton exp="kag.se[21].volume2=kag.se[5].volume2,kag.se[21].play(%['storage'=>'sound/voice/もも/h_momo0260'])" graphic=image/backlog/PLAY_button idx=7
-「さっきから我慢してるんですよ！ももちゃんにおしっこを我慢させて何を企んでるんですか！」
+「さっきから我慢してるんですよ！　ももちゃんにおしっこを我慢させて何を企んでるんですか！」
 [endvoice]
 @lr
 *save|流花H
@@ -3597,4 +3597,4 @@
 
 ;//////////////////////////////////セットダウン///
 ;// NEXT //
-[jump storage="scenario/script/流花/ruka_9.ks"]
+[jump storage="script/流花/ruka_9.ks"]

@@ -1613,4 +1613,4 @@
 @musicwait
 
 ;//Next
-[jump storage="scenario/script/もも/momo_12.ks"]
+[jump storage="script/もも/momo_12.ks"]

@@ -378,7 +378,7 @@
 *label|日向子H
 @mr
 @noname
-そんな考えにふけていると、声を掛けられて我に返る。
+そんな考えにふけっていると、声を掛けられて我に返る。
 @lr
 *label|日向子H
 @mr
@@ -1646,8 +1646,8 @@
 
 @name src=司
 @noname
-@catch text=「……うん、暖かいよ」
-「……うん、暖かいよ」
+@catch text=「……うん、温かいよ」
+「……うん、温かいよ」
 @lr
 *label|日向子H
 @mr
@@ -3506,4 +3506,4 @@
 
 ;//////////////////////////////////セットダウン///
 ;//Next
-[jump storage="scenario/script/日向子/hinako_15.ks"]
+[jump storage="script/日向子/hinako_15.ks"]

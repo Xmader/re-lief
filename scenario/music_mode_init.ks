@@ -16,7 +16,7 @@
 @iscript
 var music = %[];
 //ここを書き換える↓-------------------------------------------------------
-music.base = 'image/extra/music/base'; //背景画像、透明部分がある場合は、直前のゲーム画面が見える
+music.base = 'music_alt'; //背景画像、透明部分がある場合は、直前のゲーム画面が見える
 music.slider_base = 'slider_base';	//スライダーの背景画像
 music.slider_tab = 'slider_tab';	//スライダーのつまみ用ボタン画像
 music.playmark = 'image/extra/music/now_playing_bg'; //再生中マークの画像
@@ -53,7 +53,7 @@ music.music_panel_pos = [	//操作用リンクの位置, 前から順に/前の�
 music.volumeslider_pos   = [599,240];	//音量調整スライダーの位置
 music.positionslider_pos = [480, 254];	//再生操作スライダーの位置
 music.position_pos = [480,220];		//再生位置表示の位置
-music.music_position_font = %[];			//再生位置表示のフォント
+music.music_position_font = %['color'=>0x777777,'size'=>12,'edge'=>false];			//再生位置表示のフォント
 music.music_storage = []; //音楽ファイル名を入れる
 music.music_caption = []; //ミュージックモードに表示されるタイトルを入れる
 //music_storage, music_caption, music_cgの配列は同じ順番でなくてはならない

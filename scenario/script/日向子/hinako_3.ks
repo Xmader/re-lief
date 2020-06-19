@@ -1408,7 +1408,7 @@
 @bgmout time=2000
 @eseout
 @blackout
-@bg src=学園/寮ロビー_夜 method=universal rule=右から左
+@bg src=学園/寮ロビー_夕 method=universal rule=右から左
 @musicwait
 @ese src=SC_G_01_N
 @messagein
@@ -1420,13 +1420,13 @@
 
 @bgm1 src=T04 volume=0
 @bgm1 volume=1
-@chara base=ミリャ/ミリャ03 body=私服 mayu=通常 eye=遠目 mouth=ム pos=c
+@chara base=ミリャ/ミリャ03 body=私服 mayu=通常 eye=遠目 mouth=ム pos=c mask=ゆう
 
 荷物と背負っている本人があまりにもアンバランスで、倒れてリュックに潰されないかと冷や冷やしてしまう。
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ03 body=私服 mayu=通常 eye=遠目 mouth=空き pos=c
+@chara base=ミリャ/ミリャ03 body=私服 mayu=通常 eye=遠目 mouth=空き pos=c mask=ゆう
 
 ふと、少女はあるところで立ち止まり、ぼーっと上を見上げる。
 @lr
@@ -1437,25 +1437,25 @@
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ03 body=私服 mayu=通常 eye=半目 mouth=ム3 pos=c
+@chara base=ミリャ/ミリャ03 body=私服 mayu=通常 eye=半目 mouth=ム3 pos=c mask=ゆう
 
 放っておくわけにもいかず、俺はその少女に声を掛けた。
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=ム pos=c
+@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=ム pos=c mask=ゆう
 
 ミリャちゃんは、声をかけられるとこちらに顔を向けた。
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常横目 mouth=ム pos=c
+@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常横目 mouth=ム pos=c mask=ゆう
 
 彼女の目の前には、各部屋の呼び出し用インターホンがあった。
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=ム pos=c
+@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=ム pos=c mask=ゆう
 @name src=司
 「ああ、なるほど。任せて」
 @lr
@@ -1466,7 +1466,7 @@
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ01 body=私服 mayu=通常 eye=通常 mouth=ム2a pos=c
+@chara base=ミリャ/ミリャ01 body=私服 mayu=通常 eye=通常 mouth=ム2a pos=c mask=ゆう
 
 そういうことならと、俺は意気込んだままにそう言って前に出た。
 @lr
@@ -1493,7 +1493,7 @@
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ01 body=私服 mayu=通常 eye=通常 mouth=s pos=c
+@chara base=ミリャ/ミリャ01 body=私服 mayu=通常 eye=通常 mouth=s pos=c mask=ゆう
 @name src=ミリャ
 @v src=mirya0122 buf=8
 @hbutton exp="kag.se[21].volume2=kag.se[8].volume2,kag.se[21].play(%['storage'=>'sound/voice/ミリャ/mirya0122'])" graphic=image/backlog/PLAY_button idx=7
@@ -1512,7 +1512,7 @@
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ01 body=私服 mayu=通常 eye=遠目 mouth=△ pos=c
+@chara base=ミリャ/ミリャ01 body=私服 mayu=通常 eye=遠目 mouth=△ pos=c mask=ゆう
 @name src=ミリャ
 @v src=mirya0123 buf=8
 @hbutton exp="kag.se[21].volume2=kag.se[8].volume2,kag.se[21].play(%['storage'=>'sound/voice/ミリャ/mirya0123'])" graphic=image/backlog/PLAY_button idx=7
@@ -1531,13 +1531,13 @@
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ01 body=私服 mayu=通常 eye=半目 mouth=ム2 pos=c
+@chara base=ミリャ/ミリャ01 body=私服 mayu=通常 eye=半目 mouth=ム2 pos=c mask=ゆう
 @name src=司
 「ミリャちゃん、ちょっと学生手帳借りてもいいかな」
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=半目2 mouth=にこ pos=c
+@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=半目2 mouth=にこ pos=c mask=ゆう
 
 余計なところは見ないようにして、なんとか箒木さんの部屋番号を確認する。
 @lr
@@ -1584,7 +1584,7 @@
 *save|道行く先は霧の向こう
 @mr
 @bgm1 volume=1
-@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=ム pos=c
+@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=ム pos=c mask=ゆう
 
 ミリャちゃんがじっとこちらを見上げている。
 @lr
@@ -1600,7 +1600,7 @@
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=空き2 pos=c
+@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=空き2 pos=c mask=ゆう
 @name src=司
 「ミリャちゃん、そのさ」
 @lr
@@ -1611,7 +1611,7 @@
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=ム3 pos=c
+@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=ム3 pos=c mask=ゆう
 
 頭を捻る。小さく首を傾げて、ミリャちゃんはこちらの発する言葉を待っていた。
 @lr
@@ -1622,7 +1622,7 @@
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=空き pos=c
+@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=空き pos=c mask=ゆう
 @name src=ミリャ
 @v src=mirya0124 buf=8
 @hbutton exp="kag.se[21].volume2=kag.se[8].volume2,kag.se[21].play(%['storage'=>'sound/voice/ミリャ/mirya0124'])" graphic=image/backlog/PLAY_button idx=7
@@ -1646,13 +1646,13 @@
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=ム3 pos=c
+@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=ム3 pos=c mask=ゆう
 @name src=司
 「そのカバンの中には、何が入ってるの？」
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=空き2 pos=c
+@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=空き2 pos=c mask=ゆう
 @name src=ミリャ
 @v src=mirya0125 buf=8
 @hbutton exp="kag.se[21].volume2=kag.se[8].volume2,kag.se[21].play(%['storage'=>'sound/voice/ミリャ/mirya0125'])" graphic=image/backlog/PLAY_button idx=7
@@ -1661,7 +1661,7 @@
 *save|道行く先は霧の向こう
 @mr
 @se src=se_prop_ddo
-@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=半目2 mouth=ム pos=c
+@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=半目2 mouth=ム pos=c mask=ゆう
 
 ミリャちゃんは、返事をする代わりに鞄を降ろして、おもむろにそれを開いた。
 @lr
@@ -1672,7 +1672,7 @@
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=ム pos=c
+@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=ム pos=c mask=ゆう
 
 中身が露わになり、思わず覗き込んでしまった。
 @lr
@@ -1693,19 +1693,19 @@
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=半目2 mouth=ム pos=c move=true
+@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=半目2 mouth=ム pos=c move=true mask=ゆう
 
 聞いてみると、こくりと頷かれる。
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=ム pos=c
+@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=ム pos=c mask=ゆう
 @name src=司
 「へぇ、可愛いね」
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=半目2 mouth=ム pos=c
+@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=半目2 mouth=ム pos=c mask=ゆう
 
 他にも歯ブラシやちりがみ、生活用品がボロボロと出てくる。
 @lr
@@ -1762,13 +1762,13 @@
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=半目2 mouth=ム3 pos=c
+@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=半目2 mouth=ム3 pos=c mask=ゆう
 @name src=司
 「み、ミリャちゃん、ちょ、それ……！」
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=空き pos=c
+@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=空き pos=c mask=ゆう
 
 放置しておくわけにもいかず、かといって勝手に触ってしまうこともできない。
 @lr
@@ -1779,7 +1779,7 @@
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=ム pos=c
+@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=ム pos=c mask=ゆう
 @name src=ミリャ
 @v src=mirya0126 buf=8
 @hbutton exp="kag.se[21].volume2=kag.se[8].volume2,kag.se[21].play(%['storage'=>'sound/voice/ミリャ/mirya0126'])" graphic=image/backlog/PLAY_button idx=7
@@ -1858,7 +1858,7 @@
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=空き pos=c
+@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=空き pos=c mask=ゆう
 
 俺は天才か。荷物をしまわせれば、自然と地面のパンツにも気付く。
 @lr
@@ -1881,7 +1881,7 @@
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=ム pos=c move=true
+@chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=通常 mouth=ム pos=c move=true  mask=ゆう
 
 こくりと頷いて、ミリャちゃんは早速荷物をしまい始める。
 @lr
@@ -1892,7 +1892,7 @@
 *save|道行く先は霧の向こう
 @mr
 @bgm1 volume=0
-@chara base=日向子/日向子01 body=私服 mayu=笑い eye=笑い mouth=ワ7 pos=c
+@chara base=日向子/日向子01 body=私服 mayu=笑い eye=笑い mouth=ワ7 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1069 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1069'])" graphic=image/backlog/PLAY_button idx=7
@@ -1939,9 +1939,9 @@
 @lr
 *save|道行く先は霧の向こう
 @mr
-@bg src=学園/寮ロビー_夜
+@bg src=学園/寮ロビー_夕
 @bgm1 volume=1
-@chara base=日向子/日向子01 body=私服 mayu=通常 eye=通常 mouth=ワ pos=c
+@chara base=日向子/日向子01 body=私服 mayu=通常 eye=通常 mouth=ワ pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1070 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1070'])" graphic=image/backlog/PLAY_button idx=7
@@ -1950,13 +1950,13 @@
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=ミリャ/ミリャ02 body=私服 mayu=平行 eye=通常 mouth=空き pos=c
+@chara base=ミリャ/ミリャ02 body=私服 mayu=平行 eye=通常 mouth=空き pos=c mask=ゆう
 
 目を丸くしてこちらを見ている箒木さんと、突然の行動に驚いたのか一歩引いているようにも見えるミリャちゃん。
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=日向子/日向子01 body=私服 mayu=通常 eye=通常 mouth=空き2 pos=c
+@chara base=日向子/日向子01 body=私服 mayu=通常 eye=通常 mouth=空き2 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1071 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1071'])" graphic=image/backlog/PLAY_button idx=7
@@ -1970,7 +1970,7 @@
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=日向子/日向子01 body=私服 mayu=通常 eye=薄目 mouth=空き4 pos=c
+@chara base=日向子/日向子01 body=私服 mayu=通常 eye=薄目 mouth=空き4 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1072 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1072'])" graphic=image/backlog/PLAY_button idx=7
@@ -1984,7 +1984,7 @@
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=日向子/日向子01 body=私服 mayu=たれ eye=通常 mouth=空き pos=c
+@chara base=日向子/日向子01 body=私服 mayu=たれ eye=通常 mouth=空き pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1073 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1073'])" graphic=image/backlog/PLAY_button idx=7
@@ -2003,7 +2003,7 @@
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=日向子/日向子01 body=私服 mayu=笑い eye=通常 mouth=笑い pos=c
+@chara base=日向子/日向子01 body=私服 mayu=笑い eye=通常 mouth=笑い pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1074 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1074'])" graphic=image/backlog/PLAY_button idx=7
@@ -2012,7 +2012,7 @@
 @lr
 *save|道行く先は霧の向こう
 @mr
-@chara base=日向子/日向子01 body=私服 mayu=通常 eye=笑い mouth=ワ8 pos=c
+@chara base=日向子/日向子01 body=私服 mayu=通常 eye=笑い mouth=ワ8 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1075 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1075'])" graphic=image/backlog/PLAY_button idx=7
@@ -2066,4 +2066,4 @@
 
 
 ;// NEXT //
-[jump storage="scenario/script/日向子/hinako_4.ks"]
+[jump storage="script/日向子/hinako_4.ks"]

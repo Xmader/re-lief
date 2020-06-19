@@ -1039,7 +1039,7 @@
 *save|純白の御神体
 @mr
 @name src=司
-「えっと、彼女の病気を治す方法があれば知りたいんです。具体的な何かあれば是非お聞きしたいです」
+「えっと、彼女の病気を治す方法があれば知りたいんです。具体的に何かあれば是非お聞きしたいです」
 @lr
 *save|純白の御神体
 @mr
@@ -2510,4 +2510,4 @@
 @musicwait
 
 ;// NEXT //
-[jump storage="scenario/script/日向子/hinako_5.ks"]
+[jump storage="script/日向子/hinako_5.ks"]

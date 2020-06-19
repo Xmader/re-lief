@@ -345,4 +345,4 @@
 @all_layer_out
 ;//, ☆選択肢B終了
 
-[jump storage="scenario/script/アイ/3_4_選択合流.ks"]
+[jump storage="script/アイ/3_4_選択合流.ks"]

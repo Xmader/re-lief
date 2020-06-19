@@ -47,7 +47,7 @@ class YesNoDialogWindow extends Window
 
 	     // プライマリレイヤの作成
 	     add(new Layer(this, null));
-			 primaryLayer.loadImages("image/dialog/base");
+			 primaryLayer.loadImages("image/dialog/dialog");
 			 primaryLayer.setSizeToImageSize();
 			 setMaskRegion(192);
 

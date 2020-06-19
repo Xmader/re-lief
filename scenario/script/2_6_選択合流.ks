@@ -428,10 +428,10 @@
 
 
 
-
+:■ＣＧ「その他_白い髪_01」に変更
 @cinema_mode_in
 @ese src=SC_G_04_D
-@cg src=共通/共通_ユウ_03
+@cg src=その他/その他_白い髪_01
 
 @catch text=浜風に、長い髪がなびく。
 浜風に、長い髪がなびく。
@@ -452,8 +452,8 @@
 @mr
 
 @bgm src=S08
-@cg src=共通/共通_ユウ_01
-
+@cg src=その他/その他_白い髪_03
+;■ＣＧ「その他_白い髪_03」に変更
 @catch text=少女。
 少女。
 @lr
@@ -502,7 +502,15 @@
 @lr
 *save|必要なのは
 @mr
+;■通常画面へ。　ユウは背中を向けた立ち絵
 
+@bg src=その他/black
+
+@bg src=学園/通学路02
+@ese src=SC_G_04_D
+@cinema_mode_out
+@messagein
+@chara base=ユウ/ユウ03 body=私服 mayu=平行 eye=半目 mouth=ム pos=c
 ――アレは、なんだ？　
 @lr
 *save|必要なのは
@@ -544,7 +552,7 @@
 *save|必要なのは
 @mr
 
-@cg src=共通/共通_ユウ_02
+@chara base=ユウ/ユウ03 body=私服 mayu=平行 eye=半目 mouth=ム3 pos=c
 @name src=？？？
 @noname
 @v src=yuu0001 buf=7
@@ -555,23 +563,14 @@
 @lr
 *save|必要なのは
 @mr
-
+;■立ち絵振り向く。
+@chara base=ユウ/ユウ02 body=私服 mayu=平行 eye=通常 mouth=ム2 pos=c
 @catch text=少女が、こちらを見た。
 少女が、こちらを見た。
 @lr
 *save|必要なのは
 @mr
 
-
-@bg src=その他/black
-
-
-
-
-@bg src=学園/通学路02
-@ese src=SC_G_04_D
-@cinema_mode_out
-@messagein
 @chara base=ユウ/ユウ02 body=私服 mayu=平行 eye=通常 mouth=空き4 pos=c
 @name src=？？？
 @v src=yuu0002 buf=7
@@ -582,6 +581,7 @@
 *save|必要なのは
 @mr
 
+@chara base=ユウ/ユウ02 body=私服 mayu=平行 eye=通常 mouth=ム2 pos=c
 少女は俺の姿を見止めると、不自然なほどに自然な足取りで俺の元へと歩いてきた。
 @lr
 *save|必要なのは
@@ -651,7 +651,6 @@
 @name src=？？？
 @v src=yuu0004 buf=7
 @hbutton exp="kag.se[21].volume2=kag.se[7].volume2,kag.se[21].play(%['storage'=>'sound/voice/ユウ/yuu0004'])" graphic=image/backlog/PLAY_button idx=7
-「……」
 「……」
 @lr
 *save|必要なのは
@@ -736,7 +735,7 @@
 @lr
 *save|必要なのは
 @mr
-@chara base=ユウ/ユウ02 body=私服 mayu=通常 eye=半目 mouth=空き pos=c
+@chara base=ユウ/ユウ01 body=私服c mayu=通常 eye=通常 mouth=空き3 pos=c
 @name src=？？？
 @v src=yuu0008 buf=7
 @hbutton exp="kag.se[21].volume2=kag.se[7].volume2,kag.se[21].play(%['storage'=>'sound/voice/ユウ/yuu0008'])" graphic=image/backlog/PLAY_button idx=7
@@ -745,7 +744,7 @@
 @lr
 *save|必要なのは
 @mr
-@chara base=ユウ/ユウ02 body=私服 mayu=通常 eye=半目 mouth=ワ pos=c
+@chara base=ユウ/ユウ01 body=私服c mayu=たれ eye=通常 mouth=空き4 pos=c
 @name src=？？？
 @v src=yuu0009 buf=7
 @hbutton exp="kag.se[21].volume2=kag.se[7].volume2,kag.se[21].play(%['storage'=>'sound/voice/ユウ/yuu0009'])" graphic=image/backlog/PLAY_button idx=7
@@ -754,6 +753,7 @@
 @lr
 *save|必要なのは
 @mr
+@chara base=ユウ/ユウ01 body=私服c mayu=たれ eye=通常 mouth=ム3 pos=c
 @name src=司
 「――」
 @lr
@@ -764,7 +764,7 @@
 @lr
 *save|必要なのは
 @mr
-@chara base=ユウ/ユウ02 body=私服 mayu=通常 eye=半目 mouth=ム5 pos=c
+@chara base=ユウ/ユウ01 body=私服c mayu=たれ eye=薄目 mouth=ム2 pos=c
 @name src=？？？
 @v src=yuu0004 buf=7
 @hbutton exp="kag.se[21].volume2=kag.se[7].volume2,kag.se[21].play(%['storage'=>'sound/voice/ユウ/yuu0004'])" graphic=image/backlog/PLAY_button idx=7
@@ -772,7 +772,7 @@
 @lr
 *save|必要なのは
 @mr
-@chara base=ユウ/ユウ02 body=私服 mayu=通常 eye=半目 mouth=空き2 pos=c
+@chara base=ユウ/ユウ01 body=私服c mayu=たれ eye=通常 mouth=空き4 pos=c
 @name src=？？？
 @v src=yuu0011 buf=7
 @hbutton exp="kag.se[21].volume2=kag.se[7].volume2,kag.se[21].play(%['storage'=>'sound/voice/ユウ/yuu0011'])" graphic=image/backlog/PLAY_button idx=7
@@ -781,7 +781,7 @@
 @lr
 *save|必要なのは
 @mr
-@chara base=ユウ/ユウ02 body=私服 mayu=通常 eye=半目 mouth=ム5 pos=c
+@chara base=ユウ/ユウ01 body=私服c mayu=たれ eye=通常 mouth=ム3 pos=c
 @name src=司
 「いや……」
 @lr
@@ -847,7 +847,8 @@
 @lr
 *save|必要なのは
 @mr
-@chara base=ユウ/ユウ02 body=私服 mayu=通常 eye=瞑る mouth=笑い3 pos=c
+
+@chara base=ユウ/ユウ01 body=私服c mayu=たれ eye=瞑る mouth=ワ pos=c
 @name src=？？？
 @v src=yuu0012 buf=7
 @hbutton exp="kag.se[21].volume2=kag.se[7].volume2,kag.se[21].play(%['storage'=>'sound/voice/ユウ/yuu0012'])" graphic=image/backlog/PLAY_button idx=7
@@ -893,10 +894,10 @@
 *save|必要なのは
 @mr
 
+
 @se src=se_etc_error_noise1
 @flash src="その他/その他_ノイズ_01" time=30
 @flash src="その他/その他_ノイズ_02" time=30
-
 そう、僕たちはここでの経験を糧に、外へと戻らなければならない。
 @lr
 *save|必要なのは
@@ -924,6 +925,7 @@
 @lr
 *save|必要なのは
 @mr
+
 @bg src=学園/通学路02
 @chara base=ユウ/ユウ02 body=私服 mayu=通常 eye=通常 mouth=空き2 pos=c
 @name src=？？？
@@ -959,7 +961,7 @@
 @lr
 *save|必要なのは
 @mr
-@chara base=ユウ/ユウ02 body=私服 mayu=平行 eye=半目 mouth=ム5 pos=c
+@chara base=ユウ/ユウ01 body=私服c mayu=たれ eye=瞑る mouth=ム2 pos=c
 
 改まって、少女が居住まいを正す。
 @lr
@@ -975,7 +977,7 @@
 @lr
 *save|必要なのは
 @mr
-@chara base=ユウ/ユウ02 body=私服 mayu=通常 eye=半目 mouth=空き3 pos=c
+@chara base=ユウ/ユウ01 body=私服c mayu=たれ eye=瞑る mouth=空き4 pos=c
 @name src=？？？
 @v src=yuu0016 buf=7
 @hbutton exp="kag.se[21].volume2=kag.se[7].volume2,kag.se[21].play(%['storage'=>'sound/voice/ユウ/yuu0016'])" graphic=image/backlog/PLAY_button idx=7
@@ -985,7 +987,7 @@
 *save|必要なのは
 @mr
 
-@chara base=ユウ/ユウ02 body=私服 mayu=通常 eye=半目 mouth=空き2 pos=c
+@chara base=ユウ/ユウ01 body=私服c mayu=通常 eye=通常 mouth=空き pos=c
 @name src=？？？
 @v src=yuu0017 buf=7
 @hbutton exp="kag.se[21].volume2=kag.se[7].volume2,kag.se[21].play(%['storage'=>'sound/voice/ユウ/yuu0017'])" graphic=image/backlog/PLAY_button idx=7
@@ -998,7 +1000,7 @@
 @musicwait
 @eseout src=SC_G_04_D
 @bgmout time=1500
-@chara base=ユウ/ユウ02 body=私服 mayu=通常 eye=半目 mouth=ム5 pos=c
+@chara base=ユウ/ユウ01 body=私服c mayu=通常 eye=薄目 mouth=ム2 pos=c
 @name src=司
 「……え？」
 @lr
@@ -1008,7 +1010,7 @@
 @se src=se_etc_error_noise1
 @flash src="その他/その他_ノイズ_01" time=30
 @flash src="その他/その他_ノイズ_02" time=30
-@chara base=ユウ/ユウ02 body=私服 mayu=通常 eye=半目 mouth=ム pos=c
+@chara base=ユウ/ユウ01 body=私服c mayu=たれ eye=薄目 mouth=空き pos=c
 @name src=？？？
 @v src=yuu0018 buf=7
 @hbutton exp="kag.se[21].volume2=kag.se[7].volume2,kag.se[21].play(%['storage'=>'sound/voice/ユウ/yuu0018'])" graphic=image/backlog/PLAY_button idx=7
@@ -1020,7 +1022,7 @@
 @se src=se_etc_error_noise1
 @flash src="その他/その他_ノイズ_01" time=30
 @flash src="その他/その他_ノイズ_02" time=30
-@chara base=ユウ/ユウ02 body=私服 mayu=平行 eye=半目 mouth=ム5 pos=c
+@chara base=ユウ/ユウ01 body=私服c mayu=たれ eye=薄目 mouth=ム2 pos=c
 @name src=司
 「なに……を……？」
 @lr
@@ -1039,21 +1041,27 @@
 *save|必要なのは
 @mr
 
+@noch
+@messageout
+@cg src=共通/共通-ユウ2_01
+@cinema_mode_in
 @bgm1 src=T02 volume=0
 @bgm1 src=T02 volume=1
-@chara base=ユウ/ユウ02 body=私服 mayu=通常 eye=半目 mouth=ム pos=c
 @name src=？？？
+@noname
 @v src=yuu0019 buf=7
 @hbutton exp="kag.se[21].volume2=kag.se[7].volume2,kag.se[21].play(%['storage'=>'sound/voice/ユウ/yuu0019'])" graphic=image/backlog/PLAY_button idx=7
+@catch text=「いつかはこの楽園を出るために、自身と向き合わなければいけない」
 「いつかはこの楽園を出るために、自身と向き合わなければいけない」
 [endvoice]
 @lr
 *save|必要なのは
 @mr
-@chara base=ユウ/ユウ02 body=私服 mayu=通常 eye=通常 mouth=空き3 pos=c
 @name src=？？？
+@noname
 @v src=yuu0020 buf=7
 @hbutton exp="kag.se[21].volume2=kag.se[7].volume2,kag.se[21].play(%['storage'=>'sound/voice/ユウ/yuu0020'])" graphic=image/backlog/PLAY_button idx=7
+@catch text=「貴方はそれが嫌だから、仮面をかぶってまで虚勢を張っているのでしょう――？」
 「貴方はそれが嫌だから、仮面をかぶってまで虚勢を張っているのでしょう――？」
 [endvoice]
 @lr
@@ -1066,98 +1074,132 @@
 @flash src="その他/その他_ノイズ_02" time=30
 
 
-
+;■ＣＧ「共通-ユウ2_02」
+@cg src=共通/共通-ユウ2_02
+@catch text=……ああ。
 ……ああ。
 @lr
 *save|必要なのは
 @mr
 
+@catch text=その一言で、瓦解する。
 その一言で、瓦解する。
 @lr
 *save|必要なのは
 @mr
 
+@catch text=目まいを我慢してまで張っていた、「虚勢」とやらがぷつりと切れる。
 目まいを我慢してまで張っていた、「虚勢」とやらがぷつりと切れる。
 @lr
 *save|必要なのは
 @mr
 
+@catch text=瞬間、湧き上がってくる喪失感。
 瞬間、湧き上がってくる喪失感。
 @lr
 *save|必要なのは
 @mr
 
+@catch text=まるで自分の身体が、つま先から黒く染まっていくかのよう。
 まるで自分の身体が、つま先から黒く染まっていくかのよう。
 @lr
 *save|必要なのは
 @mr
 
+@catch text=膝が崩れて。
 膝が崩れて。
 @lr
 *save|必要なのは
 @mr
 
+@catch text=俺の意識が、闇へと落ちる、その刹那。
 俺の意識が、闇へと落ちる、その刹那。
 @lr
 *save|必要なのは
 @mr
+;■ＣＧ「共通_白い少女_01」
+@cg src=共通/共通_白い少女_01
 @name src=？？？
+@noname
 @v src=yuu0021 buf=7
 @hbutton exp="kag.se[21].volume2=kag.se[7].volume2,kag.se[21].play(%['storage'=>'sound/voice/ユウ/yuu0021'])" graphic=image/backlog/PLAY_button idx=7
+@catch text=「眠りなさい、司」
 「眠りなさい、司」
 [endvoice]
 @lr
 *save|必要なのは
 @mr
 
+@catch text=鈴のような、少女の声が。
 鈴のような、少女の声が。
 @lr
 *save|必要なのは
 @mr
 
+@catch text=まるで死神の鎌のように、さっくりと、”新田司”を破壊する。
 まるで死神の鎌のように、さっくりと、”新田司”を破壊する。
 @lr
 *save|必要なのは
 @mr
+
 @name src=？？？
+@noname
 @v src=yuu0022 buf=7
 @hbutton exp="kag.se[21].volume2=kag.se[7].volume2,kag.se[21].play(%['storage'=>'sound/voice/ユウ/yuu0022'])" graphic=image/backlog/PLAY_button idx=7
+@catch text=「だって――」
 「だって――」
 [endvoice]
 @lr
 *save|必要なのは
 @mr
+;■ＣＧ「共通_白い少女_02」
+@cg src=共通/共通_白い少女_02
 @bgm1 src=T02 volume=0.1
 @name src=？？？
+@noname
 @v src=yuu0023 buf=7
 @hbutton exp="kag.se[21].volume2=kag.se[7].volume2,kag.se[21].play(%['storage'=>'sound/voice/ユウ/yuu0023'])" graphic=image/backlog/PLAY_button idx=7
+@catch text=「あなたはとうに、亡くなっているのですから――」
 「あなたはとうに、亡くなっているのですから――」
 [endvoice]
 @lr
 *save|必要なのは
 @mr
+;■ＣＧ「共通_ユウ_03」
+@cg src=共通/共通_白い少女_03
 @bgm1 src=T02 volume=0.5
+@catch text=……世界が閉じる。
 ……世界が閉じる。
 @lr
 *save|必要なのは
 @mr
 
+;■画面少しずつ暗く。
+@cg src=その他/その他_黒ノイズ_01
+@catch text=意識は闇へと消えていき。
 意識は闇へと消えていき。
 @lr
 *save|必要なのは
 @mr
+@bg src=その他/black
 @bgm1 src=T02 volume=0.7
+@catch text=あらゆる感覚がシャットダウンするその瞬間。
 あらゆる感覚がシャットダウンするその瞬間。
 @lr
 *save|必要なのは
 @mr
+
+;■ＣＧ「その他_ピアノ_03」
+
+@cg src=その他/その他_ピアノ_03
 @bgm1 src=T02 volume=1
+@catch text=聞こえてきたのは、遥か遠い、いつか耳にした鮮やかなピアノの旋律だった――
 聞こえてきたのは、遥か遠い、いつか耳にした鮮やかなピアノの旋律だった――
 @lr
 *save|必要なのは
 @mr
 @bgm1out time=1500
-
+@cinema_mode_out
 @blackout
 @frame_out time=500
 ;////////////////////////////////シナリオエンド///
@@ -1180,6 +1222,7 @@ kag.movies[1].audioVolume=f.movie_v;
 [wait time=1000 canskip=false]
 [playvideo slot=1]
 [eval exp="sf.can_skip_movie=true"]
+@eval exp="sf.op_movie_flag=1"
 [wv canskip=false slot=1]
 [wait time=1000 canskip=false]
 ;//wvのcanskip=trueにするとスキップ可能
@@ -1190,11 +1233,11 @@ kag.movies[1].audioVolume=f.movie_v;
 @frame_in time=1000
 
 [if exp="f.momo_root_flag==2"]
-[jump storage="scenario/script/もも/momo_1.ks"]
+[jump storage="script/もも/momo_1.ks"]
 [elsif exp="f.ruka_root_flag==2"]
-[jump storage="scenario/script/流花/ruka_1.ks"]
+[jump storage="script/流花/ruka_1.ks"]
 [elsif exp="f.ai_root_flag==2"]
-[jump storage="scenario/script/アイ/3_1.ks"]
+[jump storage="script/アイ/3_1.ks"]
 [else]
-[jump storage="scenario/script/日向子/hinako_1.ks"]
+[jump storage="script/日向子/hinako_1.ks"]
 [endif]

@@ -989,13 +989,13 @@
 @blackout
 @bgmout time=1000
 [eval exp="f.momo_root_flag=1"]
-[jump storage="scenario/script/2_2a.ks"]
+[jump storage="script/2_2a.ks"]
 [s]
 
 *choice2_2b
 @blackout
 @bgmout time=1000
-[jump storage="scenario/script/2_2b.ks"]
+[jump storage="script/2_2b.ks"]
 [s]
 
 ;////////////////////////////////シナリオエンド///
@@ -1006,4 +1006,4 @@
 
 ;//////////////////////////////////セットダウン///
 ;// NEXT //
-;[jump storage="scenario/script/2_2.ks"]
+;[jump storage="script/2_2.ks"]

@@ -35,7 +35,7 @@
 @frame_in
 [rclick enabled=true name=default call=false jump=false]
 [disablestore store=false restore=false]
-[jump storage=scenario/memories/momo_h.ks]
+[jump storage=memories/momo_h.ks]
 [s]
 *momo_omake
 [call storage="memories_init.ks" target=*layer_freeimage]
@@ -44,7 +44,7 @@
 @frame_in
 [rclick enabled=true name=default call=false jump=false]
 [disablestore store=false restore=false]
-[jump storage=scenario/memories/momo_omake.ks]
+[jump storage=memories/momo_omake.ks]
 [s]
 *memories_return
 [call storage="memories_init.ks" target=*layer_freeimage]

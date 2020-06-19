@@ -24,13 +24,15 @@
 ; 画面で使用するメッセージレイヤ１つ目（グラフィカルボタンを配置するのに使用）
 [current layer="&f.message" page=fore]
 ;ギャラリーがないのでフラグには２を代入する
-[eval exp="sf.extra_flag=2" cond="sf.extra_flag === void"]
+[eval exp="sf.extra_flag=4" cond="sf.extra_flag === void"]
 [if exp="sf.extra_flag==1"]
 [jump target="*gallary"]
 [elsif exp="sf.extra_flag==2"]
 [jump target="*memories"]
 [elsif exp="sf.extra_flag==3"]
 [jump target="*music"]
+[elsif exp="sf.extra_flag==4"]
+[jump target="*movie"]
 [else]
 [jump target="*gallary"]
 [endif]
@@ -54,8 +56,14 @@
 [jump storage="music.ks"]
 [s]
 
+*movie
+[eval exp="sf.extra_flag=4"]
+[call storage=system_init.ks target=*nomessage]
+[jump storage="movie.ks"]
+[s]
 *back
 [call storage=system_init.ks target=*nomessage]
+@bg src=その他/white time=100 canskip=false
 [tempload place=1 bgm=false]
 ; メッセージ履歴の出力・表示を有効にします
 [history output=true enabled=true]

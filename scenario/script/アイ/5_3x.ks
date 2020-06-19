@@ -1381,4 +1381,4 @@
 
 
 ;//Next
-[jump storage="scenario/script/アイ/4_2.ks"]
+[jump storage="script/アイ/4_2.ks"]

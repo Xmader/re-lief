@@ -1773,8 +1773,8 @@
 ;/////////////////////////////////////////////////
 @bg src= 学園/教室_昼 time=1000 method=universal rule=右回り
 
-@ese src=SC_G_03b
-
+@ese src=SC_G_01_D
+;■ここで教室のザワザワとした環境音が流れていますが、静かな環境音でお願いします。
 @messagein
 @name src=日向子
 @v src=hinako0451 buf=3
@@ -2301,7 +2301,7 @@
 @lr
 *label|Departure
 @mr
-@eseout src=SC_G_03b
+@eseout src=SC_G_01_D
 
 @name src=日向子
 @v src=hinako0465 buf=3
@@ -2321,4 +2321,4 @@
 
 ;//////////////////////////////////セットダウン///
 ;// NEXT //
-[jump storage="scenario/script/1_8.ks"]
+[jump storage="script/1_8.ks"]

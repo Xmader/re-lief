@@ -2373,11 +2373,11 @@
 [s]
 
 *choice2_5_1
-[jump storage="scenario/script/2_5_選択１.ks"]
+[jump storage="script/2_5_選択１.ks"]
 [s]
 
 *choice2_5_2
-[jump storage="scenario/script/2_5_選択２.ks"]
+[jump storage="script/2_5_選択２.ks"]
 [s]
 
 ;////////////////////////////////シナリオエンド///

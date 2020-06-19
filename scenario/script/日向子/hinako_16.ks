@@ -1294,7 +1294,7 @@
 *save|僕は知らなかった
 @mr
 @chara base=ミリャ/ミリャ02 body=私服 mayu=通常 eye=半目 mouth=にこ2 pos=c mask=ゆう
-@name src=紗希
+@name src=日向子
 @v src=hinako1776 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1776'])" graphic=image/backlog/PLAY_button idx=7
 「紗希ちゃん……！！」
@@ -1609,4 +1609,4 @@
 @musicwait
 
 ;//Next
-[jump storage="scenario/script/日向子/hinako_17.ks"]
+[jump storage="script/日向子/hinako_17.ks"]

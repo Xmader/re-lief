@@ -588,4 +588,4 @@
 
 ;//////////////////////////////////セットダウン///
 ;// NEXT //
-[jump storage="scenario/script/流花/ruka_2.ks"]
+[jump storage="script/流花/ruka_2.ks"]

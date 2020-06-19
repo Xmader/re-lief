@@ -447,7 +447,7 @@
 *save|友だちだったから
 @mr
 @noname
-だが、このまま返すわけにもいかない。
+だが、このまま帰すわけにもいかない。
 @lr
 *save|友だちだったから
 @mr
@@ -913,7 +913,7 @@
 @v src=nakamura0026 buf=13
 @hbutton exp="kag.se[21].volume2=kag.se[13].volume2,kag.se[21].play(%['storage'=>'sound/voice/夏奈/nakamura0026'])" graphic=image/backlog/PLAY_button idx=7
 ;//「ああ、できますよー！　サービスでチーズも抜いておきましょうか？」ボイスに合わせて訂正
-「できるよ！サービスでチーズも抜いとくね！」
+「できるよ！　サービスでチーズも抜いとくね！」
 [endvoice]
 @lr
 *save|友だちだったから
@@ -932,7 +932,7 @@
 @v src=nakamura0027 buf=13
 @hbutton exp="kag.se[21].volume2=kag.se[13].volume2,kag.se[21].play(%['storage'=>'sound/voice/夏奈/nakamura0027'])" graphic=image/backlog/PLAY_button idx=7
 ;//「てへっ、冗談ですよ！　それじゃあ新田さんはどうします？」ボイスに合わせて訂正
-「冗談だよ！新田くんは？」
+「冗談だよ！　新田くんは？」
 [endvoice]
 @lr
 *save|友だちだったから
@@ -962,7 +962,7 @@
 @v src=nakamura0029 buf=13
 @hbutton exp="kag.se[21].volume2=kag.se[13].volume2,kag.se[21].play(%['storage'=>'sound/voice/夏奈/nakamura0029'])" graphic=image/backlog/PLAY_button idx=7
 ;//ボイスに合わせて訂正
-「なるほど！女の子だけ太らせて、後で食べちゃうんだ！」
+「なるほど！　女の子だけ太らせて、後で食べちゃうんだ！」
 [endvoice]
 @lr
 *save|友だちだったから
@@ -977,7 +977,7 @@
 @v src=nakamura0030 buf=13
 @hbutton exp="kag.se[21].volume2=kag.se[13].volume2,kag.se[21].play(%['storage'=>'sound/voice/夏奈/nakamura0030'])" graphic=image/backlog/PLAY_button idx=7
 ;//ボイスに合わせて訂正
-「いいと思うよ！肉食系男子！」
+「いいと思うよ！　肉食系男子！」
 [endvoice]
 @lr
 *save|友だちだったから
@@ -987,7 +987,7 @@
 @v src=nakamura0031 buf=13
 @hbutton exp="kag.se[21].volume2=kag.se[13].volume2,kag.se[21].play(%['storage'=>'sound/voice/夏奈/nakamura0031'])" graphic=image/backlog/PLAY_button idx=7
 ;//ボイスに合わせて訂正
-「えーと、注文承りました！ちょっと待っててね！」
+「えーと、注文承りました！　ちょっと待っててね！」
 [endvoice]
 @lr
 *save|友だちだったから
@@ -1065,7 +1065,7 @@
 @v src=nakamura0034 buf=13
 @hbutton exp="kag.se[21].volume2=kag.se[13].volume2,kag.se[21].play(%['storage'=>'sound/voice/夏奈/nakamura0034'])" graphic=image/backlog/PLAY_button idx=7
 ;//ボイスに合わせて訂正
-「冗談だよ！はいっ！ハムチーズサンドのレタスときゅうり抜きだよ！」
+「冗談だよ！はいっ！　ハムチーズサンドのレタスときゅうり抜きだよ！」
 [endvoice]
 @lr
 *save|友だちだったから
@@ -1668,4 +1668,4 @@
 @musicwait
 ;//Next
 [wait time=300 canskip=false]
-[jump storage="scenario/script/もも/momo_11.ks"]
+[jump storage="script/もも/momo_11.ks"]

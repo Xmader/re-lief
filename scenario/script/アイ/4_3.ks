@@ -276,12 +276,12 @@
 *save|過去Ⅲ
 @mr
 
-
+;■ここより、研究室にてキーボード音のあるＳＥが流れ続けますが、無人なのでなしでお願いします。
 @bg src=その他/black
 @bg src=現実世界/研究室_昼
 @cinema_mode_out
 @messagein
-@ese src=SC_R_05_D
+@ese src=SC_G_01_D
 @chara base=伊砂/伊砂02 body=私服 mayu=通常 eye=通常 mouth=笑い pos=c
 対して、とっくに気付かれていると思っていましたが、と真は笑って。
 @lr
@@ -311,6 +311,7 @@
 @lr
 *save|過去Ⅲ
 @mr
+
 @noch
 @cinema_mode_in
 @bg src=その他/black
@@ -636,7 +637,7 @@
 *save|過去Ⅲ
 @mr
 
-@eseout src=SC_R_05_D
+@eseout src=SC_G_01_D
 @bgmout time=500
 
 @cg src=その他/その他_桜散_04
@@ -816,4 +817,4 @@ DEAR YOU
 
 
 ;//Next
-[jump storage="scenario/script/アイ/6_3.ks"]
+[jump storage="script/アイ/6_3.ks"]

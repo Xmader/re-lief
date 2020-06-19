@@ -1081,4 +1081,4 @@
 
 
 
-[jump storage="scenario/script/もも/momo_14.ks"]
+[jump storage="script/もも/momo_14.ks"]

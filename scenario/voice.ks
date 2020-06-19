@@ -26,7 +26,7 @@
 [call storage=system_init.ks target=*nomessage]
 [current layer="&f.message" page=fore]
 [position layer="&f.message" visible=true]
-[image storage="image/system/voice/base" layer=base page=fore]
+[image storage="image/system/voice/voice" layer=base page=fore]
 
 [image storage="image/system/voice/hinako" layer=0 visible=true left="&f.v_name_x[0]" top="&f.v_name_y[0]" cond="sf.hinako_voice_flag==1"]
 [image storage="image/system/voice/hatena" layer=0 visible=true left="&f.v_name_x[0]" top="&f.v_name_y[0]" cond="sf.hinako_voice_flag==0 || sf.hinako_voice_flag===void"]

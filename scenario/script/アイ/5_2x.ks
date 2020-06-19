@@ -1,4 +1,4 @@
-﻿;--------------------------------------------------------------------------------
+;--------------------------------------------------------------------------------
 ;;Re:Lief　-親愛なるあなたへ-
 ;;シーン番号：5_2x
 ;;シーンタイトル：BackPropagation
@@ -566,9 +566,9 @@
 @messageout
 @bg src=その他/black method=universal rule=右回り
 ;///////////////////////////////////////////////////////////////////////////////
-;■雫さんの指定でS04bに
+;■指定でN04bに
 @bg src=第二地区/山道 time=2000
-@bgm src=S04b
+@bgm src=N04b
 @ese src=SC_1_07_D
 @messagein
 翌日。
@@ -1454,7 +1454,7 @@
 @name src=流花
 @v src=ruka0303 buf=4
 @hbutton exp="kag.se[21].volume2=kag.se[4].volume2,kag.se[21].play(%['storage'=>'sound/voice/流花/ruka0303'])" graphic=image/backlog/PLAY_button idx=7
-「日向子、大丈夫か？　なんなら運転、少し変わっても……」
+「日向子、大丈夫か？　なんなら運転、少し代わっても……」
 [endvoice]
 @lr
 *save|BackPropagation
@@ -2252,7 +2252,7 @@
 @lr
 *save|BackPropagation
 @mr
-二人もいいのなら、と返して、私たちはももちゃんの言葉に従い、一度浜辺へと降りることにした。
+二人ともいいのなら、と返して、私たちはももちゃんの言葉に従い、一度浜辺へと降りることにした。
 @lr
 *save|BackPropagation
 @mr
@@ -2943,4 +2943,4 @@
 @wait time=500
 
 ;//Next
-[jump storage="scenario/script/アイ/5_3x.ks"]
+[jump storage="script/アイ/5_3x.ks"]

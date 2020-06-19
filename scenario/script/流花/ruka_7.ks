@@ -1381,7 +1381,7 @@
 @eseout src=src=SC_1_01
 @blackout
 
-@bg src=学園/学食_夜 time=1500 method=universal rule=右から左
+@bg src=学園/学食_夕 time=1500 method=universal rule=右から左
 @ese src=SC_G_01_E
 @messagein
 
@@ -1402,7 +1402,7 @@
 *save|シリアライズ
 @mr
 
-@chara base=流花/流花01 body=私服 mayu=たれ2 eye=ジト目 mouth=あわわ pos=c
+@chara base=流花/流花01 body=私服 mayu=たれ2 eye=ジト目 mouth=あわわ pos=c mask=ゆう
 @name src=流花
 @v src=ruka1028 buf=4
 @hbutton exp="kag.se[21].volume2=kag.se[4].volume2,kag.se[21].play(%['storage'=>'sound/voice/流花/ruka1028'])" graphic=image/backlog/PLAY_button idx=7
@@ -1428,7 +1428,7 @@
 *save|シリアライズ
 @mr
 
-@chara base=伊砂/伊砂01 body=デフォルト mayu=困り eye=半目 mouth=ム pos=c
+@chara base=伊砂/伊砂01 body=デフォルト mayu=困り eye=半目 mouth=ム pos=c mask=ゆう
 @name src=伊砂
 @v src=isuka0262 buf=11
 @hbutton exp="kag.se[21].volume2=kag.se[11].volume2,kag.se[21].play(%['storage'=>'sound/voice/伊砂/isuka0262'])" graphic=image/backlog/PLAY_button idx=7
@@ -1437,7 +1437,7 @@
 @lr
 *save|シリアライズ
 @mr
-@chara base=流花/流花02 body=私服 mayu=へ eye=驚き mouth=はわわ pos=c
+@chara base=流花/流花02 body=私服 mayu=へ eye=驚き mouth=はわわ pos=c mask=ゆう
 @name src=流花
 @v src=ruka1029 buf=4
 @hbutton exp="kag.se[21].volume2=kag.se[4].volume2,kag.se[21].play(%['storage'=>'sound/voice/流花/ruka1029'])" graphic=image/backlog/PLAY_button idx=7
@@ -2345,4 +2345,4 @@
 
 ;//////////////////////////////////セットダウン///
 ;// NEXT //
-[jump storage="scenario/script/流花/ruka_801H.ks"]
+[jump storage="script/流花/ruka_801H.ks"]

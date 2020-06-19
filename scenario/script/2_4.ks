@@ -711,7 +711,7 @@
 @name src=流花
 @v src=ruka0177 buf=4
 @hbutton exp="kag.se[21].volume2=kag.se[4].volume2,kag.se[21].play(%['storage'=>'sound/voice/流花/ruka0177'])" graphic=image/backlog/PLAY_button idx=7
-「……うぅ……見間違いだった……ももが集めてるガチャガチャの玩具がクモに見えた……」
+「……うぅ……見間違いだった……ももが集めてるカプセルトイの玩具がクモに見えた……」
 [endvoice]
 @lr
 *save|クモは嫌いなのです
@@ -1632,4 +1632,4 @@
 
 ;//////////////////////////////////セットダウン///
 ;// NEXT //
-[jump storage="scenario/script/2_5.ks"]
+[jump storage="script/2_5.ks"]

@@ -7,12 +7,12 @@
 
 
 *save|終わる世界
-@frame_out
+;■音楽　T03a　ではなく、 S08bでお願いします
 @bg src=アイキャッチ/島外観 time=2000 canskip=false
 @wait time=3000
-@frame_in
 @bg src=その他/white
-@bgm src=S08b
+@bgm src= S08b
+
 @messagein
 @noname
 瞼を突き抜けて、強い光が差し込んでくる。
@@ -556,7 +556,7 @@
 @mr
 @cinema_mode_in
 @cg src=もも/もも_一人のために_02
-
+@musicwait
 @ese src=SC_1_01
 
 
@@ -709,6 +709,8 @@
 *save|終わる世界
 @mr
 
+@eseout src=SC_1_01
+
 @noname
 @catch text=一度は、遅すぎて失敗してしまった。
 一度は、遅すぎて失敗してしまった。
@@ -726,20 +728,18 @@
 *save|終わる世界
 @mr
 
+
+@bgmout wait=false
+
 @noname
-@catch text=試して見るんだ、もう一度。
-試して見るんだ、もう一度。
+@catch text=試してみるんだ、もう一度。
+試してみるんだ、もう一度。
 @lr
 *save|終わる世界
 @mr
-
-
-
-@bgmout wait=false
-@eseout src=SC_1_01
 @bg src=その他/black
 @musicwait
 
 ;//Next
 [wait time=300 canskip=false]
-[jump storage="scenario/script/もも/momo_15.ks"]
+[jump storage="script/もも/momo_15.ks"]

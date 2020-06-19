@@ -890,6 +890,12 @@
 @mr
 
 @name src=日向子の父
+[eval exp="tf.path='hinakofather0001'"]
+[eval exp="f.play_now_buff=&tf.buf,f.play_now_voice=&tf.path"]
+[eval exp="kag.se[21].volume2=kag.se[13].volume2;"]
+[eval exp="kag.se[21].volume=100;"]
+[fadeinse  storage="&tf.path" buf=21 time=150 cond="kag.skipMode<=2"]
+@hbutton exp="kag.se[21].volume2=kag.se[16].volume2,kag.se[21].play(%['storage'=>'hinakofather0001'])" graphic=image/backlog/PLAY_button idx=7
 「お父さんとお母さんは離婚する」
 @lr
 *save|君は知らない
@@ -906,6 +912,12 @@
 @mr
 
 @name src=日向子の父
+[eval exp="tf.path='hinakofather0002'"]
+[eval exp="f.play_now_buff=&tf.buf,f.play_now_voice=&tf.path"]
+[eval exp="kag.se[21].volume2=kag.se[13].volume2;"]
+[eval exp="kag.se[21].volume=100;"]
+[fadeinse  storage="&tf.path" buf=21 time=150 cond="kag.skipMode<=2"]
+@hbutton exp="kag.se[21].volume2=kag.se[16].volume2,kag.se[21].play(%['storage'=>'hinakofather0002'])" graphic=image/backlog/PLAY_button idx=7
 「お前はどちらについていきたい。お父さんか、お母さんか」
 @lr
 *save|君は知らない
@@ -1674,4 +1686,4 @@
 @bg src=その他/black
 @cinema_mode_out
 ;//Next
-[jump storage="scenario/script/日向子/hinako_11.ks"]
+[jump storage="script/日向子/hinako_11.ks"]

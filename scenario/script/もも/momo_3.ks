@@ -455,7 +455,7 @@
 @name src=日向子
 @v src=hinako1826 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1826'])" graphic=image/backlog/PLAY_button idx=7
-「むぅ……みんなの前でそう言うの、むぅ」
+「むぅ……みんなの前でそういうの、むぅ」
 [endvoice]
 @lr
 *save|トトはお前が嫌いです
@@ -806,7 +806,7 @@
 @v src=nakamura0014 buf=13
 @hbutton exp="kag.se[21].volume2=kag.se[13].volume2,kag.se[21].play(%['storage'=>'sound/voice/夏奈/nakamura0014'])" graphic=image/backlog/PLAY_button idx=7
 ;//台本ボイスのセリフに変更
-「じゃーん！実はここの店員だったのです！」
+「じゃーん！　実はここの店員だったのです！」
 [endvoice]
 @lr
 *save|トトはお前が嫌いです
@@ -821,7 +821,7 @@
 @v src=nakamura0015 buf=13
 @hbutton exp="kag.se[21].volume2=kag.se[13].volume2,kag.se[21].play(%['storage'=>'sound/voice/夏奈/nakamura0015'])" graphic=image/backlog/PLAY_button idx=7
 ;//台本ボイスのセリフに変更
-「ちゃんと許可はもらってるよ！職場体験！」
+「ちゃんと許可はもらってるよ！　職場体験！」
 [endvoice]
 @lr
 *save|トトはお前が嫌いです
@@ -934,7 +934,7 @@
 @v src=nakamura0021 buf=13
 @hbutton exp="kag.se[21].volume2=kag.se[13].volume2,kag.se[21].play(%['storage'=>'sound/voice/夏奈/nakamura0021'])" graphic=image/backlog/PLAY_button idx=7
 ;//台本ボイスのセリフに変更
-「かしこまりました！ベイクドチーズケーキとガトーショコラ！」
+「かしこまりました！　ベイクドチーズケーキとガトーショコラ！」
 [endvoice]
 @lr
 *save|トトはお前が嫌いです
@@ -1052,7 +1052,7 @@
 *save|トトはお前が嫌いです
 @mr
 @name src=司
-「人工知能を作るための聞き取り調査だ……だっけ？」
+「人工知能を作るための聞き取り調査……だっけ？」
 @lr
 *save|トトはお前が嫌いです
 @mr
@@ -3024,7 +3024,7 @@
 @v src=toto0100 buf=14
 @hbutton exp="kag.se[21].volume2=kag.se[14].volume2,kag.se[21].play(%['storage'=>'sound/voice/トト/toto0100'])" graphic=image/backlog/PLAY_button idx=7
 ;//ボイスはそいつごときといっている
-「大体ですね、オンリーワンと言えば、ももにとってそれは私のことなんです！　そいつ男ごときが、ももの――」
+「大体ですね、オンリーワンと言えば、ももにとってそれは私のことなんです！　そいつごときが、ももの――」
 [endvoice]
 @lr
 *save|トトはお前が嫌いです
@@ -3146,4 +3146,4 @@
 @messageout
 @musicwait
 [wait time=300 canskip=false]
-[jump storage="scenario/script/もも/momo_4.ks"]
+[jump storage="script/もも/momo_4.ks"]

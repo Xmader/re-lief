@@ -1127,7 +1127,7 @@
 @mr
 
 @name src=司
-「うん、それで、ミリャに渡したいものがあるんだ。それがずっと渡せずに――」
+「うん、それで、ミリャちゃんに渡したいものがあるんだ。それがずっと渡せずに――」
 @lr
 *save|おでかけ（でーと）
 @mr
@@ -1636,6 +1636,9 @@
 *save|おでかけ（でーと）
 @mr
 @noch
+;■時間経過ワイプ処理
+@bg src=その他/black time=1500
+@bg src=第一地区/海岸 method=universal rule=右回り
 
 話し込んでいると、時間はあっという間に過ぎていった。
 @lr
@@ -1883,4 +1886,4 @@
 
 
 ;// NEXT //
-[jump storage="scenario/script/日向子/hinako_7.ks"]
+[jump storage="script/日向子/hinako_7.ks"]

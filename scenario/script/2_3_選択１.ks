@@ -92,4 +92,4 @@
 
 ;//////////////////////////////////セットダウン///
 ;// NEXT //
-[jump storage="scenario/script/2_3_選択合流.ks"]
+[jump storage="script/2_3_選択合流.ks"]

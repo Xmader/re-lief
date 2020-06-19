@@ -935,7 +935,7 @@
 @name src=日向子
 @v src=hinako1504 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1504'])" graphic=image/backlog/PLAY_button idx=7
-「少しずつ司君のことを知る機会ができて、司くんの弱い部分も知る事ができたりして……嬉しかった」
+「少しずつ司くんのことを知る機会ができて、司くんの弱い部分も知る事ができたりして……嬉しかった」
 [endvoice]
 @lr
 *save|居場所
@@ -967,7 +967,8 @@
 @name src=日向子
 @v src=hinako1508 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1508'])" graphic=image/backlog/PLAY_button idx=7
-「司くんに必要だったのは、司くんが安心して過ごせる、居場所だったんだ」
+「司くんに必要なのは、司くんが安心して過ごせる、居場所だったんだ」
+;■ボイスミス修正「司くんに必要なのは、司くんが安心して過ごせる、居場所だったんだ」
 [endvoice]
 @lr
 *save|居場所
@@ -1059,8 +1060,8 @@
 @v src=hinako1512 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1512'])" graphic=image/backlog/PLAY_button idx=7
 
-@catch text=「私ね、紗希ちゃんと出会って、斉藤さんに出会って、みんなと出会って、変わっていったの」
-「私ね、紗希ちゃんと出会って、斉藤さんに出会って、みんなと出会って、変わっていったの」
+@catch text=「私ね、紗希ちゃんと出会って、斎藤さんに出会って、みんなと出会って、変わっていったの」
+「私ね、紗希ちゃんと出会って、斎藤さんに出会って、みんなと出会って、変わっていったの」
 [endvoice]
 @lr
 *save|居場所
@@ -2616,11 +2617,12 @@
 @mr
 
 @chara base=日向子/日向子02 body=私服 mayu=たれ eye=通常 mouth=ム4 pos=c
-
+;■ここの日向子のテレ顔が画面切り替え時も残ったまま次まで引き継いでいるので、修正をお願いします。
 反応がなかったので、ちらっと彼女の顔を覗き見ると、真っ赤な顔で視線を逸らされてしまった。
 @lr
 *save|居場所
 @mr
+@noch
 @bg src=その他/black
 @bg src=学園/寮部屋02_夜a method=universal rule=右から左
 @se src=se_hs_cloth1
@@ -3743,4 +3745,4 @@
 
 @musicwait
 
-[jump storage="scenario/script/日向子/hinako_12.ks"]
+[jump storage="script/日向子/hinako_12.ks"]

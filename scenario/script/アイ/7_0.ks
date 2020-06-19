@@ -413,7 +413,7 @@
 *save|エピローグ
 @mr
 
-今日会うみんなの他にも、生活費を援助してくれていたおばあちゃん、受験のことを教えてくれた斉藤さんには、感謝してもしたりない。
+今日会うみんなの他にも、生活費を援助してくれていたおばあちゃん、受験のことを教えてくれた斎藤さんには、感謝してもしたりない。
 @lr
 *save|エピローグ
 @mr
@@ -426,7 +426,7 @@
 @name src=日向子
 @v src=hinako0973 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako0973'])" graphic=image/backlog/PLAY_button idx=7
-「……見てもらいかった、かな」
+「……見てもらいたかった、かな」
 [endvoice]
 @lr
 *save|エピローグ
@@ -700,7 +700,7 @@
 @bg src=アイキャッチ/島外観 time=2000 canskip=false
 @wait time=2000
 @frame_in
-@cg src=体験版/体験版_楽園_01 time=1500
+@cg src=体験版/体験版_楽園_03 time=1500
 
 [sysbtopt forevisible=true backvisible=true]
 
@@ -1027,8 +1027,8 @@
 
 
 @bg src=その他/white2 time=2000 canskip=false
-
-@cg src=アイ/アイ_行ってきます_02
+;■01です。
+@cg src=アイ/アイ_行ってきます_01
 
 [sysbtopt forevisible=true backvisible=true]
 
@@ -1394,7 +1394,7 @@
 @mr
 
 
-
+@bgmout time=2000
 @cg src=アイ/アイ_行ってきます_02 time=1000
 @name src=司
 @noname
@@ -1451,4 +1451,4 @@ ruka.complete();
 @endscript
 
 @bg src=その他/white2 time=2000 canskip=false
-[jump storage="scenario/script/title.ks"]
+[jump storage="title.ks"]

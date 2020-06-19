@@ -35,7 +35,7 @@
 @frame_in
 [rclick enabled=true name=default call=false jump=false]
 [disablestore store=false restore=false]
-[jump storage=scenario/memories/hinako_h.ks]
+[jump storage=memories/hinako_h.ks]
 [s]
 *hinako_omake
 [call storage="memories_init.ks" target=*layer_freeimage]
@@ -44,7 +44,7 @@
 @frame_in
 [rclick enabled=true name=default call=false jump=false]
 [disablestore store=false restore=false]
-[jump storage=scenario/memories/hinako_omake.ks]
+[jump storage=memories/hinako_omake.ks]
 [s]
 
 *memories_return

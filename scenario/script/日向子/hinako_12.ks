@@ -433,7 +433,7 @@
 @lr
 *save|恋愛シミュレーション
 @mr
-;■雫さんの指示でS09に変更しました
+;■S09に変更
 @bgm src=S09
 @name src=理人
 @v src=rihito0252 buf=10
@@ -824,4 +824,4 @@
 @all_layer_out
 @blackout time=300
 @musicwait
-[jump storage="scenario/script/日向子/hinako_13.ks"]
+[jump storage="script/日向子/hinako_13.ks"]

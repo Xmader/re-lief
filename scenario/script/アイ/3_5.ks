@@ -723,7 +723,9 @@
 @bgmout time=500
 @noch
 @cinema_mode_in
-@cg src=アイ/アイ_トライメント_02 time=2000
+;■ＣＧが恐らくフォルダのほうで画像間違えています。本来の０２は、司とアイが手を差し伸べあっている、夜の絵です。
+;■夜のCGがなかったので07を追加
+@cg src=アイ/アイ_トライメント_07 time=2000
 ;@chara base=アイ body=アイ/トライメント/02 mayu=デフォルト eye=デフォルト mouth=デフォルト pos=c
 
 
@@ -1360,4 +1362,4 @@
 
 
 ;//Next
-[jump storage="scenario/script/アイ/3_6.ks"]
+[jump storage="script/アイ/3_6.ks"]

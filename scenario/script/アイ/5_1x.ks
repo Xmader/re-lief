@@ -1357,11 +1357,12 @@
 *save|虚飾の空
 @mr
 だってそれって、つまり。
+
 @lr
 *save|虚飾の空
 @mr
-@blurout
 
+@blurout
 @cinema_mode_in
 @cg src=体験版/体験版_リベンジ_01
 
@@ -1861,7 +1862,7 @@
 @name src=アイ
 @v src=ai0290 buf=6
 @hbutton exp="kag.se[21].volume2=kag.se[6].volume2,kag.se[21].play(%['storage'=>'sound/voice/アイ/ai0290'])" graphic=image/backlog/PLAY_button idx=7
-「この世界は、人体実験の実験場なんかじゃ断じてないんだ。ボクも、この世界が作られた当初は[ruby text="・"]い[ruby text="・"]な[ruby text="・"]か[ruby text="・"]っ[ruby text="・"]た[ruby text="・"]か[ruby text="・"]ら詳しいことはわからないんだけど」
+「この世界は、人体実験の実験場なんかじゃ断じてないんだ。ボクも、この世界が作られた当初は[rb text="・"]い[rb text="・"]な[rb text="・"]か[rb text="・"]っ[rb text="・"]た[rb text="・"]か[rb text="・"]ら詳しいことはわからないんだけど」
 [endvoice]
 @lr
 *save|虚飾の空
@@ -3121,4 +3122,4 @@
 @mr
 @all_out
 ;//Next
-[jump storage="scenario/script/アイ/4_1.ks"]
+[jump storage="script/アイ/4_1.ks"]

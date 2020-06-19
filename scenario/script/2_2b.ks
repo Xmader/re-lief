@@ -867,16 +867,16 @@
 [s]
 
 *choice2_2b_1
-[jump storage="scenario/script/2_2b_選択１.ks"]
+[jump storage="script/2_2b_選択１.ks"]
 [s]
 
 *choice2_2b_2
 [eval exp="f.ruka_root_flag=1"]
-[jump storage="scenario/script/2_2b_選択２.ks"]
+[jump storage="script/2_2b_選択２.ks"]
 [s]
 
 *choice2_2b_3
-[jump storage="scenario/script/2_2b_選択３.ks"]
+[jump storage="script/2_2b_選択３.ks"]
 [s]
 
 ;////////////////////////////////シナリオエンド///
@@ -887,4 +887,4 @@
 
 ;//////////////////////////////////セットダウン///
 ;// NEXT //
-;[jump storage="scenario/script/2_共通/2_2b_選択合流.ks"]
+;[jump storage="script/2_共通/2_2b_選択合流.ks"]

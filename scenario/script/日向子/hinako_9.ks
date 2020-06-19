@@ -1182,20 +1182,24 @@
 @eseout SC_1_04_D
 @messageout
 @all_layer_out
+@cinema_mode_in
 @bg src=その他/夕空 mask=ゆう method=universal rule=右回り
 @bgm src=T01
 @ese src=SC_1_05_N
-@messagein
+;■ここ、シネマモードでお願いします。
+@catch text=また車に乗って、山の上へと向かう道を走る。
 また車に乗って、山の上へと向かう道を走る。
 @se src=se_sc_car
 @lr
 *save|花言葉
 @mr
 
-@drive_mode_in @drive_mode_in base=日向子/日向子01 body=私服 mayu=通常 eye=通常 mouth=笑い pos=c
+@drive_mode_in base=日向子/日向子01 body=私服 mayu=通常 eye=通常 mouth=笑い pos=c
 @name src=日向子
+@noname
 @v src=hinako1419 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1419'])" graphic=image/backlog/PLAY_button idx=7
+@catch text=「うわぁ、道が急だね」
 「うわぁ、道が急だね」
 [endvoice]
 @lr
@@ -1204,68 +1208,77 @@
 
 @drive_mode_out
 @name src=司
+@noname
+@catch text=「あ、すごい。ここからも街の景色が見渡せるよ」
 「あ、すごい。ここからも街の景色が見渡せるよ」
 @lr
 *save|花言葉
 @mr
 
-@messageout
 @all_layer_out
 [wt]
 @bg src=第一地区/展望台景色_夕 mask=ゆう method=universal rule=右から左
-@messagein
+@catch text=年代物の自動車は、地面のでこぼこに差し掛かるたびに飛び跳ねた。
 年代物の自動車は、地面のでこぼこに差し掛かるたびに飛び跳ねた。
 @lr
 *save|花言葉
 @mr
 
+@catch text=先程はぐっすりだったミリャも、この道の状態では寝てもいられないようだ。
 先程はぐっすりだったミリャも、この道の状態では寝てもいられないようだ。
 @lr
 *save|花言葉
 @mr
 
+@catch text=海外では、実際に空を飛ぶように走る車があるというのに。
 海外では、実際に空を飛ぶように走る車があるというのに。
 @lr
 *save|花言葉
 @mr
-@messageout
 @bg src=その他/none
 @bg src=その他/夕空 mask=ゆう method=universal rule=右回り
-@messagein
+@catch text=道のりは、そこまで長いわけでもなかった。
 道のりは、そこまで長いわけでもなかった。
 @lr
 *save|花言葉
 @mr
 
+@catch text=しかし、東の方の空からは、段々と夜の闇が顔を出し始めていた。
 しかし、東の方の空からは、段々と夜の闇が顔を出し始めていた。
 @lr
 *save|花言葉
 @mr
 
+@catch text=ようやく目的の場所に着くと、まさにおあつらえ向きと言った感じに、駐車スペースがあった。
 ようやく目的の場所に着くと、まさにおあつらえ向きと言った感じに、駐車スペースがあった。
 @lr
 *save|花言葉
 @mr
 
 @name src=司
+@noname
+@catch text=「ここに駐めよう」
 「ここに駐めよう」
 @lr
 *save|花言葉
 @mr
 
 @name src=日向子
+@noname
 @v src=hinako1420 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1420'])" graphic=image/backlog/PLAY_button idx=7
+@catch text=「うん」
 「うん」
+;■シネマモードここまで。
 [endvoice]
 @lr
 *save|花言葉
 @mr
-@messageout
 @eseout SC_1_05_N
 @se src=se_prop_cardoor
 @all_layer_out
 @bg src=第一地区/草原_夕 mask=ゆう method=universal rule=右から左
+@cinema_mode_out
 @ese src=SC_1_06
 @messagein
 車を駐めて外を眺めると、眼前には広大な草原が広がっていた。
@@ -1861,7 +1874,7 @@
 *save|花言葉
 @mr
 
-病室に沈黙だけが続く中、病室のドアが開いた。
+病室に沈黙だけが続く中、それを破るようにしてドアが開いた。
 @lr
 *save|花言葉
 @mr
@@ -2167,7 +2180,7 @@
 @bg src=第一地区/街_夜 mask=よる method=universal rule=右から左
 @ese src=SC_G_02_N
 @messagein
-外に停めてあった車に乗り込むと、少しだけ軋むような音がした。
+外に駐めてあった車に乗り込むと、少しだけ軋むような音がした。
 @se src=se_prop_cardoor
 @lr
 *save|花言葉
@@ -2383,4 +2396,4 @@
 @blackout time=100
 @musicwait
 ;//Next
-[jump storage="scenario/script/日向子/hinako_10.ks"]
+[jump storage="script/日向子/hinako_10.ks"]

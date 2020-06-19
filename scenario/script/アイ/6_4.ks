@@ -17,6 +17,7 @@ kag.movies[1].audioVolume=f.movie_v;
 [wait time=1000 canskip=false]
 [playvideo slot=1]
 [eval exp="sf.can_skip_movie=true"]
+@eval exp="sf.piano_movie_flag=1"
 [wv canskip=false slot=1]
 [wait time=1000 canskip=false]
 ;//wvのcanskip=trueにするとスキップ可能
@@ -1088,7 +1089,8 @@ kag.movies[1].audioVolume=f.movie_v;
 @mr
 @cg src=アイ/アイ_トライメント_05
 @noname
-いつか来る、[ruby text="トライ"]審[ruby text="メント"]判の日に向けて、だから僕らは歩き続ける。
+@catch text=いつか来る、審判の日に向けて、だから僕らは歩き続ける。
+いつか来る、[rb text="トライ"]審[rb text="メント"]判の日に向けて、だから僕らは歩き続ける。
 @lr
 *save|Re:LieF
 @mr
@@ -1128,7 +1130,8 @@ kag.movies[1].audioVolume=f.movie_v;
 @lr
 *save|Re:LieF
 @mr
-@cg src=アイ/アイ_天使_01
+;■ＣＧ「アイ_僕らは再び_01」
+@cg src=アイ/アイ_僕らは再び_01
 @noname
 @catch text=それでも。
 それでも。
@@ -1167,4 +1170,4 @@ kag.movies[1].audioVolume=f.movie_v;
 @frame_out
 
 ;////////////////////////////////映像再生（グランドエンディング）///
-[jump storage="scenario/script/アイ/7_0.ks"]
+[jump storage="script/アイ/7_0.ks"]

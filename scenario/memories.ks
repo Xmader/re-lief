@@ -41,6 +41,8 @@
 
 ;下部にボタン配置
 ;体験版時の処理
+[locate x=638 y=647]
+[button onleave="sse_stop()" onenter="sse_play()"  graphic="image/extra/movie/movie" target=*movie hint="ムービー"]
 [locate x=752 y=647]
 [button onleave="sse_stop()" onenter="sse_play(true)" graphic="image/extra/button/gallery" storage=extra_menu.ks target=*gallary hint="ギャラリー"]
 [locate x=980 y=647]
@@ -48,7 +50,7 @@
 [locate x=1094 y=647]
 [button onleave="sse_stop()" onenter="sse_play(true)" graphic="image/extra/button/back" storage=extra_menu.ks target=*back hint="前画面に戻る"]
 [backlay]
-[image storage="image/extra/memories/base" layer=base page=back]
+[image storage="image/extra/memories/memories_base_" layer=base page=back]
 @stoptrans
 @trans method=crossfade time=300
 @wt
@@ -79,6 +81,10 @@
 [jump storage=extra_menu.ks target=*back]
 [s]
 
+*movie
+[cm]
+[jump storage=extra_menu.ks target=*movie]
+[s]
 
 *music
 [cm]

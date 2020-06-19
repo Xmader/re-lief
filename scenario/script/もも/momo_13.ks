@@ -346,4 +346,4 @@
 ;@musicwait
 
 [wait time=300 canskip=false]
-[jump storage="scenario/script/もも/momo_1301H.ks"]
+[jump storage="script/もも/momo_1301H.ks"]

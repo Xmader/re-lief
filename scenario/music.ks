@@ -118,8 +118,7 @@ kag.onCloseQuery = function ()
 @nowait
 @current layer="&'message' + (kag.numMessageLayers - 2)"
 @locate x=&music.position_pos[0] y=&music.position_pos[1]
-@eval exp="kag.tagHandlers.font(music.music_position_font)"
-@font size=12 edge=false
+@font size=12 shadow=false edge=false
   00:00                                                00:00
 @resetfont
 @endnowait
@@ -130,15 +129,17 @@ kag.onCloseQuery = function ()
 ; 再生位置を描画するサブルーチン
 *redraw
 @current layer="&'message' + (kag.numMessageLayers - 2)"
+
 @er
+@resetfont
+@eval exp="sf.text_color=0"
+@font shadow=false size=12 edge=false
 @locate x=&music.position_pos[0] y=&music.position_pos[1]
 @nowait
-@eval exp="kag.tagHandlers.font(music.music_position_font)"
-@font size=12  edge=false 
 @emb exp="'  %02d:%02d                                                %02d:%02d'.sprintf((kag.bgm.buf1.totalTime*music.slider[1].hval)\60000, (int)(((kag.bgm.buf1.totalTime*music.slider[1].hval)%60000)/1000), kag.bgm.buf1.totalTime\60000, (int)((kag.bgm.buf1.totalTime%60000)/1000))"
 @resetfont
+@eval exp="sf.text_color=f.tmp_font_color"
 @endnowait
-
 @s
 
 *play
@@ -203,6 +204,8 @@ music.temp_start = 1;
 @image layer="&kag.numCharacterLayers-2" storage=&music.base page=fore visible=true cond="!music.temp_start"
 @current layer="&'message' + (kag.numMessageLayers - 1)"
 @er
+@locate x=638 y=647 
+@button onleave="sse_stop()" onenter="sse_play()"  graphic="image/extra/movie/movie" target=*movie
 @locate x=752 y=647 
 @button  onleave="sse_stop()" onenter="sse_play(true)" graphic="image/extra/gallary/gallery" target=*gallary
 @locate x=866 y=647 
@@ -231,7 +234,8 @@ music.temp_start = 1;
 				@eval exp="kag.tagHandlers.font(music.music_caption_font)"
 				@eval exp="sf.text_color = 0"
 				@if exp="music.temp_start&&music.check_y == music.base_y +( music.temp_column+tf.lineval) * music.height &&music.check_x==&music.base_x + music.temp_line * music.width"
-					@font color=0xffffff edge=false
+					@eval exp="sf.text_color=1"
+					@font edge=false shadow=false
 				@endif
 				@emb exp="music.music_caption[music.page*music.column*music.line + music.temp_column*music.line + music.temp_line]"
 				@resetfont
@@ -367,6 +371,24 @@ music.playing = i;
 @endscript
 @jump storage=music.ks target=*play
 @s
+
+*movie
+[cm]
+@iscript
+// マウスホイールの動作を戻す
+//終了処理を戻す
+kag.onCloseQuery = music.onCloseQuery_org;
+// タイマー開放
+invalidate music.timer if music.timer !== void;
+@endscript
+;バックアップした音量を戻す
+@eval exp="kag.tagHandlers.bgmopt(%['gvolume' => tempvolume/1000])"
+@eval exp="music.temp_start=0"
+@tempload place=1 bgm=false
+@bgmout time=50
+@bgm src=title_BGM time=200
+[jump storage=extra_menu.ks target=*movie]
+[s]
 
 *memories
 [cm]

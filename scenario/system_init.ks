@@ -149,31 +149,44 @@
 *font_color_white_loop
 	[eval exp="tf.message='message'+tf.nolyaer_i"]
 	[current layer="&tf.message"]
-	[deffont color="0xffffff" edgecolor="0x777777" edge=true shadow=false bold=false]
+	[deffont color="0xffffff" edgecolor="0x101010" edge=true shadow=false bold=false]
 	[resetfont]
-	[eval exp="kag.fore.messages[0].defaultEdgeColor=0x777777"]
+	[eval exp="kag.fore.messages[0].defaultEdgeColor=0x101010"]
 [return]
+
+*font_color_black
+[eval exp="tf.nolayer_i = 6"]
+*font_color_white_loop
+	[eval exp="tf.message='message'+tf.nolyaer_i"]
+	[current layer="&tf.message"]
+	[deffont color="0x101010" edgecolor="0xffffff" edge=true shadow=false bold=false]
+	[resetfont]
+	[eval exp="kag.fore.messages[0].defaultEdgeColor=0xffffff"]
+[return]
+
 
 *font_change_func
 [current layer="message0"]
-[if exp="sf.font==0"]
-	[eval exp="tf.font_face='ロダン'"]
-[elsif exp="sf.font==1"]
-	[eval exp="tf.font_face='筑紫a'"]
+[if exp="sf.font==1"]
+	[eval exp="tf.font_face='筑紫a'" cond="sf.font_size==0 || sf.font_size===void"]
+	[eval exp="tf.font_face='筑紫a20'" cond="sf.font_size==1"]
 [elsif exp="sf.font==2"]
-	[eval exp="tf.font_face='スーラ'"]
+	[eval exp="tf.font_face='スーラ'" cond="sf.font_size==0 || sf.font_size===void"]
+	[eval exp="tf.font_face='スーラ20'" cond="sf.font_size==1"]
 [else]
-	[eval exp="tf.font_face='ロダン'"]
+	[eval exp="tf.font_face='ロダン'" cond="sf.font_size==0 || sf.font_size===void"]
+	[eval exp="tf.font_face='ロダン20'" cond="sf.font_size==1"]
 [endif]
 [eval exp="kag.chDefaultFace = tf.font_face"]
 [eval exp="kag.setMessageLayerUserFont()"]
-[if exp="sf.text_color"]
-	[deffont face=&tf.font_face color=0xffffff edgecolor=0x777777]
-[else]
+[if exp="sf.text_color==0 || sf.text_color===void"]
 	[deffont face=&tf.font_face color=0x777777 edgecolor=0xffffff]
+[elsif exp="sf.text_color==1"]
+	[deffont face=&tf.font_face color=0xffffff edgecolor=0x101010]
+[else]
+	[deffont face=&tf.font_face color=0x101010 edgecolor=0xffffff]
 [endif]
 [resetfont]
-
 [return]
 
 ; フォント変更の条件式
@@ -188,4 +201,24 @@
 	[layopt layer=message0 visible=true]
 [endif]
 
+[return]
+
+
+*font_config_change
+[eval exp="f.previous_font_face='ロダン'" cond="sf.font==0 && sf.font_size==0 || sf.font_size===void"]
+[eval exp="f.previous_font_face='ロダン20'" cond="sf.font==0 && sf.font_size==1"]
+[eval exp="f.previous_font_face='筑紫a'" cond="sf.font==1 && sf.font_size==0 || sf.font_size===void"]
+[eval exp="f.previous_font_face='筑紫a20'" cond="sf.font==1 && sf.font_size==1"]
+[eval exp="f.previous_font_face='スーラ'" cond="sf.font==2 && sf.font_size==0 || sf.font_size===void"]
+[eval exp="f.previous_font_face='スーラ20'" cond="sf.font==2 && sf.font_size==1"]
+[eval exp="kag.chDefaultFace = f.previous_font_face"]
+[eval exp="kag.setMessageLayerUserFont()"]
+[if exp="sf.text_color==0 || sf.text_color===void"]
+	[deffont face=&tf.font_face color=0x777777 edgecolor=0xffffff]
+[elsif exp="sf.text_color==1"]
+	[deffont face=&tf.font_face color=0xffffff edgecolor=0x101010]
+[else]
+	[deffont face=&tf.font_face color=0x101010 edgecolor=0xffffff]
+[endif]
+[resetfont]
 [return]

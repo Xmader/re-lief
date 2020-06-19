@@ -2057,7 +2057,7 @@
 @all_layer_out
 
 [wait time=300 canskip=false]
-[jump storage="scenario/script/もも/momo_5.ks"]
+[jump storage="script/もも/momo_5.ks"]
 ;////////////////////////////////シナリオエンド///
 
 

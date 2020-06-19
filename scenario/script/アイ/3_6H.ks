@@ -1080,13 +1080,10 @@
 @lr
 *save|アルファH
 @mr
-@musicwait
-@bgmout
 
 ;///////////////////////////////////////////////////////////////////////////////
 @bg src=その他/black time=1500
-@bgm src=S10
-
+;■ここ、ＢＧＭ切り替えずに、Ｓ１４で
 @catch text=それからは、毎日のように僕は彼女を求め続けた。
 それからは、毎日のように僕は彼女を求め続けた。
 @lr
@@ -1670,6 +1667,6 @@
 @cinema_mode_out
 @messageout
 ;//Next
-[jump storage="scenario/script/アイ/3_7.ks"]
+[jump storage="script/アイ/3_7.ks"]
 
 

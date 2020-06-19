@@ -806,4 +806,4 @@
 ;//5_0の最初のほうにもcinema_mode_outあり
 @cinema_mode_out
 ;//Next
-[jump storage="scenario/script/アイ/5_0.ks"]
+[jump storage="script/アイ/5_0.ks"]

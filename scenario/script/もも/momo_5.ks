@@ -786,7 +786,7 @@
 *save|next stage
 @mr
 @noname
-さっき理人は、天才は孤独だ、なんて行っていたけど、ももちゃんの場合は全然そんなことないようだ。
+さっき理人は、天才は孤独だ、なんて言っていたけど、ももちゃんの場合は全然そんなことないようだ。
 @lr
 *save|next stage
 @mr
@@ -800,8 +800,6 @@
 @lr
 *save|next stage
 @mr
-
-@musicwait
 
 @bgm2 volume=1
 @bgm1out
@@ -898,7 +896,7 @@
 *save|next stage
 @mr
 
-
+@eseout src=SC_G_03b
 @noname
 せめて、理人も一緒に送り出してやろう。
 @lr
@@ -909,7 +907,7 @@
 @lr
 *save|next stage
 @mr
-@eseout src=SC_G_03b
+
 @all_layer_out
 @bg src=学園/教室_昼 method=universal rule=右回り
 @ese src=SC_G_03a
@@ -945,7 +943,7 @@
 @mr
 
 @chara base=もも/もも02 body=制服a mayu=驚き eye=丸 mouth=呆れ pos=c
-@move layer=1 path="(62,10,255)(950,10,255)" time=2500
+@move layer=1 path="(62,10,255)(990,10,255)" time=2500
 @se src=se_prop_pull time=1000
 @name src=もも
 @v src=momo0722 buf=5
@@ -984,6 +982,7 @@
 「ん、これ。タブレット」
 [endvoice]
 @lr
+;■このあたりの流花の移動の挙動がおかしい？
 *save|next stage
 @mr
 @noname
@@ -1134,7 +1133,7 @@
 @lr
 *save|next stage
 @mr
-
+@eseout src=SC_G_03a
 @name src=司
 「うん。そっちも、ももちゃんの方、よろしくね」
 @lr
@@ -1146,9 +1145,6 @@
 *save|next stage
 @mr
 
-@musicwait
-
-@eseout src=SC_G_03a
 @bgm2out
 @all_layer_out
 @bg src=学園/教室_昼 time=1500 method=universal rule=右から左
@@ -1159,7 +1155,7 @@
 *save|next stage
 @mr
 @noname
-空き教室へ移動し、ドアを締める。
+空き教室へ移動し、ドアを閉める。
 @lr
 *save|next stage
 @mr
@@ -2146,9 +2142,7 @@
 @lr
 *save|next stage
 @mr
-
-@musicwait
-
+;■ここの音楽していですが、N04a ではなく N04bでお願いします
 @bgm2 volume=1 wait=false
 @bgm1out wait=false
 
@@ -2915,18 +2909,16 @@
 *save|next stage
 @mr
 
+@bgm2out wait=false
+@eseout src=SC_G_01_D wait=false
+
 @noname
 そうして、俺とももちゃんは、恋人同士となった。
 @lr
 *save|next stage
 @mr
 @messageout
-
-@musicwait
-
-@bgm2out wait=false
-@eseout src=SC_G_01_D wait=false
 @all_layer_out
 @musicwait
 [wait time=300 canskip=false]
-[jump storage="scenario/script/もも/momo_6.ks"]
+[jump storage="script/もも/momo_6.ks"]

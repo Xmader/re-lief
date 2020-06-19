@@ -1062,10 +1062,11 @@
 @mr
 @noch
 @eseout
+;■
 @bg src=その他/black method=universal rule=右から左
-@bg src=学園/通学路01 method=universal rule=右から左
+@bg src=学園/通学路01_夕 method=universal rule=右から左
 @ese src=SC_G_04_D
-@chara base=日向子/日向子03 body=制服 mayu=通常 eye=通常 mouth=ム pos=c
+@chara base=日向子/日向子03 body=制服 mayu=通常 eye=通常 mouth=ム pos=c mask=ゆう
 
 日が傾き始めた通学路を、箒木さんと２人で歩く。
 @lr
@@ -1082,7 +1083,7 @@
 *save|見知らぬ顔
 @mr
 
-@chara base=日向子/日向子03 body=制服 mayu=笑い eye=通常 mouth=ム2 pos=c
+@chara base=日向子/日向子03 body=制服 mayu=笑い eye=通常 mouth=ム2 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1001 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1001'])" graphic=image/backlog/PLAY_button idx=7
@@ -1098,7 +1099,7 @@
 *save|見知らぬ顔
 @mr
 
-@chara base=日向子/日向子03 body=制服 mayu=笑い eye=半目 mouth=空き pos=c
+@chara base=日向子/日向子03 body=制服 mayu=笑い eye=半目 mouth=空き pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1002 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1002'])" graphic=image/backlog/PLAY_button idx=7
@@ -1112,7 +1113,7 @@
 @lr
 *save|見知らぬ顔
 @mr
-@chara base=日向子/日向子03 body=制服 mayu=怒 eye=瞑る mouth=ム3 pos=c
+@chara base=日向子/日向子03 body=制服 mayu=怒 eye=瞑る mouth=ム3 pos=c mask=ゆう
 
 しかし、彼女は何か別のことを考えているようで、しきりに顎に手を当てたり、首を傾げたりしている。
 @lr
@@ -1129,7 +1130,7 @@
 *save|見知らぬ顔
 @mr
 
-@chara base=日向子/日向子01 body=制服 mayu=通常 eye=通常 mouth=ワ pos=c
+@chara base=日向子/日向子01 body=制服 mayu=通常 eye=通常 mouth=ワ pos=c mask=ゆう
 @move layer=1 path="(62,-20,255)(62,10,255)" time=150
 @name src=日向子
 @v src=hinako1003 buf=3
@@ -1140,7 +1141,7 @@
 *save|見知らぬ顔
 @mr
 
-@chara base=日向子/日向子01 body=制服 mayu=通常 eye=通常 mouth=ム2 pos=c
+@chara base=日向子/日向子01 body=制服 mayu=通常 eye=通常 mouth=ム2 pos=c mask=ゆう
 @name src=司
 「ミリャちゃん、大丈夫かなって」
 @lr
@@ -1152,7 +1153,7 @@
 *save|見知らぬ顔
 @mr
 
-@chara base=日向子/日向子01 body=制服 mayu=たれ eye=ジト目 mouth=ム2 pos=c
+@chara base=日向子/日向子01 body=制服 mayu=たれ eye=ジト目 mouth=ム2 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1004 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1004'])" graphic=image/backlog/PLAY_button idx=7
@@ -1161,7 +1162,7 @@
 @lr
 *save|見知らぬ顔
 @mr
-@chara base=日向子/日向子01 body=制服 mayu=たれ eye=瞑り2 mouth=ム3 pos=c
+@chara base=日向子/日向子01 body=制服 mayu=たれ eye=瞑り2 mouth=ム3 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1005 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1005'])" graphic=image/backlog/PLAY_button idx=7
@@ -1175,19 +1176,19 @@
 @lr
 *save|見知らぬ顔
 @mr
-@chara base=日向子/日向子01 body=制服 mayu=たれ eye=ジト目 mouth=ム2 pos=c
+@chara base=日向子/日向子01 body=制服 mayu=たれ eye=ジト目 mouth=ム2 pos=c mask=ゆう
 
 隣を歩きながら、箒木さんはしばらくそんなことを繰り返していた。
 @lr
 *save|見知らぬ顔
 @mr
-@chara base=日向子/日向子01 body=制服 mayu=怒 eye=瞑る mouth=ム2 pos=c
+@chara base=日向子/日向子01 body=制服 mayu=怒 eye=瞑る mouth=ム2 pos=c mask=ゆう
 
 それでも、ようやく決心がついたのか、足を止めてひとつ深呼吸をしてから口を開いた。
 @lr
 *save|見知らぬ顔
 @mr
-@chara base=日向子/日向子01 body=制服 mayu=怒 eye=通常 mouth=空き3 pos=c
+@chara base=日向子/日向子01 body=制服 mayu=怒 eye=通常 mouth=空き3 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1006 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1006'])" graphic=image/backlog/PLAY_button idx=7
@@ -1203,7 +1204,7 @@
 *save|見知らぬ顔
 @mr
 
-@chara base=日向子/日向子01 body=制服 mayu=たれ eye=通常 mouth=ム2 pos=c
+@chara base=日向子/日向子01 body=制服 mayu=たれ eye=通常 mouth=ム2 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1007 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1007'])" graphic=image/backlog/PLAY_button idx=7
@@ -1234,7 +1235,7 @@
 @mr
 
 
-@chara base=日向子/日向子01 body=制服 mayu=驚き eye=通常 mouth=空き4 pos=c
+@chara base=日向子/日向子01 body=制服 mayu=驚き eye=通常 mouth=空き4 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1008 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1008'])" graphic=image/backlog/PLAY_button idx=7
@@ -1250,7 +1251,7 @@
 *save|見知らぬ顔
 @mr
 
-@chara base=日向子/日向子01 body=制服 mayu=たれ eye=笑い mouth=ワ pos=c
+@chara base=日向子/日向子01 body=制服 mayu=たれ eye=笑い mouth=ワ pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1009 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1009'])" graphic=image/backlog/PLAY_button idx=7
@@ -1259,7 +1260,7 @@
 @lr
 *save|見知らぬ顔
 @mr
-@chara base=日向子/日向子01 body=制服 mayu=たれ eye=瞑り2 mouth=ム2 pos=c
+@chara base=日向子/日向子01 body=制服 mayu=たれ eye=瞑り2 mouth=ム2 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1010 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1010'])" graphic=image/backlog/PLAY_button idx=7
@@ -1280,14 +1281,14 @@
 *save|見知らぬ顔
 @mr
 
-@chara base=日向子/日向子01 body=制服 mayu=たれ eye=ジト目 mouth=ム2 pos=c
+@chara base=日向子/日向子01 body=制服 mayu=たれ eye=ジト目 mouth=ム2 pos=c mask=ゆう
 
 理人あたりに見られていたら、部屋に帰った時どれだけからかわれることか。
 @lr
 *save|見知らぬ顔
 @mr
 
-@chara base=日向子/日向子01 body=制服 mayu=たれ eye=瞑る mouth=ワ4 pos=c
+@chara base=日向子/日向子01 body=制服 mayu=たれ eye=瞑る mouth=ワ4 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1011 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1011'])" graphic=image/backlog/PLAY_button idx=7
@@ -1303,7 +1304,7 @@
 *save|見知らぬ顔
 @mr
 
-@chara base=日向子/日向子01 body=制服 mayu=通常 eye=通常 mouth=空き4 pos=c
+@chara base=日向子/日向子01 body=制服 mayu=通常 eye=通常 mouth=空き4 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1012 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1012'])" graphic=image/backlog/PLAY_button idx=7
@@ -1313,7 +1314,7 @@
 *save|見知らぬ顔
 @mr
 
-@chara base=日向子/日向子01 body=制服 mayu=たれ eye=通常 mouth=ム2 effect=頬染め pos=c
+@chara base=日向子/日向子01 body=制服 mayu=たれ eye=通常 mouth=ム2 effect=頬染め pos=c mask=ゆう
 箒木さんの顔が、火にかけたやかんのように真っ赤になる。
 @lr
 *save|見知らぬ顔
@@ -1329,7 +1330,7 @@
 *save|見知らぬ顔
 @mr
 
-@chara base=日向子/日向子01 body=制服 mayu=通常 eye=通常 mouth=空き pos=c
+@chara base=日向子/日向子01 body=制服 mayu=通常 eye=通常 mouth=空き pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1013 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1013'])" graphic=image/backlog/PLAY_button idx=7
@@ -1344,7 +1345,7 @@
 *save|見知らぬ顔
 @mr
 
-@chara base=日向子/日向子01 body=制服 mayu=通常 eye=通常 mouth=ム pos=c
+@chara base=日向子/日向子01 body=制服 mayu=通常 eye=通常 mouth=ム pos=c mask=ゆう
 暖かくて、柔らかかったけど。
 @lr
 *save|見知らぬ顔
@@ -1354,7 +1355,7 @@
 @lr
 *save|見知らぬ顔
 @mr
-@chara base=日向子/日向子01 body=制服 mayu=通常 eye=ジト目 mouth=空き2 pos=c
+@chara base=日向子/日向子01 body=制服 mayu=通常 eye=ジト目 mouth=空き2 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1014 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1014'])" graphic=image/backlog/PLAY_button idx=7
@@ -1370,7 +1371,7 @@
 *save|見知らぬ顔
 @mr
 
-@chara base=日向子/日向子01 body=制服 mayu=通常 eye=薄目 mouth=空き3 pos=c
+@chara base=日向子/日向子01 body=制服 mayu=通常 eye=薄目 mouth=空き3 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1015 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1015'])" graphic=image/backlog/PLAY_button idx=7
@@ -1380,7 +1381,7 @@
 *save|見知らぬ顔
 @mr
 
-@chara base=日向子/日向子01 body=制服 mayu=通常 eye=薄目 mouth=ム3 pos=c
+@chara base=日向子/日向子01 body=制服 mayu=通常 eye=薄目 mouth=ム3 pos=c mask=ゆう
 箒木さんが妙に納得がいったという顔をしている。
 @lr
 *save|見知らぬ顔
@@ -1401,7 +1402,7 @@
 *save|見知らぬ顔
 @mr
 
-@chara base=日向子/日向子03 body=制服 mayu=通常 eye=見開き mouth=空き4 pos=c
+@chara base=日向子/日向子03 body=制服 mayu=通常 eye=見開き mouth=空き4 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1016 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1016'])" graphic=image/backlog/PLAY_button idx=7
@@ -1411,7 +1412,7 @@
 *save|見知らぬ顔
 @mr
 
-@chara base=日向子/日向子03 body=制服 mayu=通常 eye=見開き mouth=ム6 pos=c
+@chara base=日向子/日向子03 body=制服 mayu=通常 eye=見開き mouth=ム6 pos=c mask=ゆう
 @name src=司
 「うん」
 @lr
@@ -1464,10 +1465,10 @@
 @lr
 *save|見知らぬ顔
 @mr
-
-@bg src=学園/通学路01
+;■夕
+@bg src=学園/通学路01_夕
 @ese src=SC_G_04_D
-@chara base=日向子/日向子03 body=制服 mayu=笑い eye=半目 mouth=ワ4 pos=c
+@chara base=日向子/日向子03 body=制服 mayu=笑い eye=半目 mouth=ワ4 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1017 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1017'])" graphic=image/backlog/PLAY_button idx=7
@@ -1476,7 +1477,7 @@
 @lr
 *save|見知らぬ顔
 @mr
-@chara base=日向子/日向子01 body=制服 mayu=通常 eye=薄目 mouth=空き3 pos=c
+@chara base=日向子/日向子01 body=制服 mayu=通常 eye=薄目 mouth=空き3 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1018 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1018'])" graphic=image/backlog/PLAY_button idx=7
@@ -1486,12 +1487,12 @@
 *save|見知らぬ顔
 @mr
 
-@chara base=日向子/日向子01 body=制服 mayu=通常 eye=薄目 mouth=ム3 pos=c
+@chara base=日向子/日向子01 body=制服 mayu=通常 eye=薄目 mouth=ム3 pos=c mask=ゆう
 そこまで言って、箒木さんが首を傾げる。
 @lr
 *save|見知らぬ顔
 @mr
-@chara base=日向子/日向子03 body=制服 mayu=驚き eye=見開き mouth=空き3 pos=c
+@chara base=日向子/日向子03 body=制服 mayu=驚き eye=見開き mouth=空き3 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1019 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1019'])" graphic=image/backlog/PLAY_button idx=7
@@ -1505,13 +1506,13 @@
 @lr
 *save|見知らぬ顔
 @mr
-@chara base=日向子/日向子03 body=制服 mayu=通常 eye=通常 mouth=ム pos=c
+@chara base=日向子/日向子03 body=制服 mayu=通常 eye=通常 mouth=ム pos=c mask=ゆう
 
 なんにせよ、箒木さんにも同じような経験があったとは驚きだ。
 @lr
 *save|見知らぬ顔
 @mr
-@chara base=日向子/日向子01 body=制服 mayu=たれ eye=薄目 mouth=空き4 pos=c
+@chara base=日向子/日向子01 body=制服 mayu=たれ eye=薄目 mouth=空き4 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1020 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1020'])" graphic=image/backlog/PLAY_button idx=7
@@ -1521,14 +1522,14 @@
 *save|見知らぬ顔
 @mr
 
-@chara base=日向子/日向子01 body=制服 mayu=たれ eye=薄目 mouth=ム3 pos=c
+@chara base=日向子/日向子01 body=制服 mayu=たれ eye=薄目 mouth=ム3 pos=c mask=ゆう
 @name src=司
 「された方も、びっくりするだろうしね」
 @lr
 *save|見知らぬ顔
 @mr
 
-@chara base=日向子/日向子03 body=制服 mayu=通常 eye=通常 mouth=空き5 pos=c
+@chara base=日向子/日向子03 body=制服 mayu=通常 eye=通常 mouth=空き5 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1021 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1021'])" graphic=image/backlog/PLAY_button idx=7
@@ -1538,7 +1539,7 @@
 *save|見知らぬ顔
 @mr
 
-@chara base=日向子/日向子03 body=制服 mayu=通常 eye=通常 mouth=ム pos=c
+@chara base=日向子/日向子03 body=制服 mayu=通常 eye=通常 mouth=ム pos=c mask=ゆう
 @name src=司
 「俺が？　確かに、いつもじいっと見つめられたりはするけど……」
 @lr
@@ -1550,7 +1551,7 @@
 *save|見知らぬ顔
 @mr
 
-@chara base=日向子/日向子01 body=制服 mayu=通常 eye=通常 mouth=空き2 pos=c
+@chara base=日向子/日向子01 body=制服 mayu=通常 eye=通常 mouth=空き2 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1022 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1022'])" graphic=image/backlog/PLAY_button idx=7
@@ -1559,7 +1560,7 @@
 @lr
 *save|見知らぬ顔
 @mr
-@chara base=日向子/日向子01 body=制服 mayu=笑い eye=通常 mouth=笑い2 pos=c
+@chara base=日向子/日向子01 body=制服 mayu=笑い eye=通常 mouth=笑い2 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1023 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1023'])" graphic=image/backlog/PLAY_button idx=7
@@ -1578,7 +1579,7 @@
 @lr
 *save|見知らぬ顔
 @mr
-@chara base=日向子/日向子03 body=制服 mayu=笑い eye=笑い mouth=笑い pos=c
+@chara base=日向子/日向子03 body=制服 mayu=笑い eye=笑い mouth=笑い pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1024 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1024'])" graphic=image/backlog/PLAY_button idx=7
@@ -1587,7 +1588,7 @@
 @lr
 *save|見知らぬ顔
 @mr
-@chara base=日向子/日向子03 body=制服 mayu=笑い eye=笑い mouth=ワ4 pos=c
+@chara base=日向子/日向子03 body=制服 mayu=笑い eye=笑い mouth=ワ4 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1025 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1025'])" graphic=image/backlog/PLAY_button idx=7
@@ -1602,7 +1603,7 @@
 @lr
 *save|見知らぬ顔
 @mr
-@chara base=日向子/日向子03 body=制服 mayu=驚き eye=ジト目 mouth=s pos=c
+@chara base=日向子/日向子03 body=制服 mayu=驚き eye=ジト目 mouth=s pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1026 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1026'])" graphic=image/backlog/PLAY_button idx=7
@@ -1618,7 +1619,7 @@
 *save|見知らぬ顔
 @mr
 
-@chara base=日向子/日向子03 body=制服 mayu=通常 eye=通常 mouth=笑い pos=c
+@chara base=日向子/日向子03 body=制服 mayu=通常 eye=通常 mouth=笑い pos=c mask=ゆう
 
 などと、本人不在のミリャちゃん談義に華を咲かせつつ。
 @lr
@@ -1629,7 +1630,7 @@
 @lr
 *save|見知らぬ顔
 @mr
-@chara base=日向子/日向子03 body=制服 mayu=通常 eye=半目 mouth=笑い pos=c
+@chara base=日向子/日向子03 body=制服 mayu=通常 eye=半目 mouth=笑い pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1027 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1027'])" graphic=image/backlog/PLAY_button idx=7
@@ -1658,20 +1659,20 @@
 @lr
 *save|見知らぬ顔
 @mr
-@chara base=日向子/日向子03 body=制服 mayu=驚き eye=見開き mouth=ワ3 pos=c
+@chara base=日向子/日向子03 body=制服 mayu=驚き eye=見開き mouth=ワ3 pos=c mask=ゆう
 
 そんな景色に、２人してしばらく見入ってしまう。
 @lr
 *save|見知らぬ顔
 @mr
-@chara base=日向子/日向子03 body=制服 mayu=通常 eye=通常 mouth=笑い pos=c
+@chara base=日向子/日向子03 body=制服 mayu=通常 eye=通常 mouth=笑い pos=c mask=ゆう
 @name src=司
 「……今日はありがとう。助かったよ」
 @lr
 *save|見知らぬ顔
 @mr
 
-@chara base=日向子/日向子01 body=制服 mayu=通常 eye=薄目 mouth=笑い2 pos=c
+@chara base=日向子/日向子01 body=制服 mayu=通常 eye=薄目 mouth=笑い2 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1028 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1028'])" graphic=image/backlog/PLAY_button idx=7
@@ -1680,7 +1681,7 @@
 @lr
 *save|見知らぬ顔
 @mr
-@chara base=日向子/日向子01 body=制服 mayu=笑い eye=笑い mouth=笑い3 pos=c
+@chara base=日向子/日向子01 body=制服 mayu=笑い eye=笑い mouth=笑い3 pos=c mask=ゆう
 @name src=日向子
 @v src=hinako1029 buf=3
 @hbutton exp="kag.se[21].volume2=kag.se[3].volume2,kag.se[21].play(%['storage'=>'sound/voice/日向子/hinako1029'])" graphic=image/backlog/PLAY_button idx=7
@@ -1716,4 +1717,4 @@
 @musicwait
 
 ;// NEXT //
-[jump storage="scenario/script/日向子/hinako_2.ks"]
+[jump storage="script/日向子/hinako_2.ks"]

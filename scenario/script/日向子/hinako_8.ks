@@ -300,7 +300,7 @@
 @mr
 @chara base=ミリャ/ミリャ01 body=私服 mayu=通常 eye=遠目2 mouth=にこ2 pos=c
 
-そう言って俺の横に来て、手すりに両腕を枕にするみたいにして、手すりにもたれかかった。
+そう言って俺の横に来て、両腕を枕にするみたいにして、手すりにもたれかかった。
 @lr
 *save|本当の僕
 @mr
@@ -521,7 +521,7 @@
 @lr
 *save|本当の僕
 @mr
-;■雫さんの指示で、ここでbgmを停止します。
+;■ここでbgmを停止します。
 @bgmout time=1500
 そしてそれは間違っていなかったようで――
 @lr
@@ -1025,11 +1025,12 @@
 @chara base=ミリャ/ミリャ01 body=制服 mayu=通常 eye=遠目2 mouth=△ pos=cl
 
 この課題が始まった当初では、まだミリャは喋ることができなかった。
+;■ここ、回想なので、白ノイズを上にお願いします。
 @lr
 *save|本当の僕
 @mr
 @noch
-@bg src=第一地区/展望台_昼
+@bg src=第一地区/展望台_昼 noise=白 number=4
 @chara base=ミリャ/ミリャ01 body=私服 mayu=通常 eye=半目 mouth=にこ pos=c
 @catch text=あの夢の中で出会った女の子、彼女は紗希という名前だった。
 あの夢の中で出会った女の子、彼女は紗希という名前だった。
@@ -1044,7 +1045,7 @@
 @mr
 @eseout SC_G_01_D
 @all_layer_out
-@bg src=都心/東京_闇
+@bg src=都心/東京_闇 noise=白 number=4
 @chara base=司/司01 body=制服 mayu=通常2 eye=通常 mouth=ム2 pos=c
 @catch text=夢に現れる二上司とは、今の俺の状態を表す何かなのだろうか。
 夢に現れる二上司とは、今の俺の状態を表す何かなのだろうか。
@@ -1060,7 +1061,7 @@
 *save|本当の僕
 @mr
 
-
+@noiseout  src=その他/その他_白ノイズ_04 time=10
 @bg src=学園/教室_昼
 @ese src=SC_G_01_D
 @cinema_mode_out
@@ -1080,8 +1081,8 @@
 *save|本当の僕
 @mr
 @noch
-@bg src=学園/通学路02
-
+@bg src=学園/通学路02 noise=白 number=4
+;■ここもまた、回想なので、白ノイズを上にお願いします。
 ――入学したあの頃。
 @lr
 *save|本当の僕
@@ -1120,7 +1121,7 @@
 @mr
 
 
-
+@noiseout  src=その他/その他_白ノイズ_04 time=10
 @cinema_mode_in
 @cg src=その他/その他_黒ノイズ_01
 @name src=司
@@ -1295,9 +1296,10 @@
 *save|本当の僕
 @mr
 
-@bg src=学園/教室_昼
+@bg src=その他/black time=1000
+@bg src=学園/教室_昼 noise=黒 number=9
 @chara base=もも/もも03 body=制服 mayu=怒 eye=通常 mouth=笑い3 pos=c
-
+;■ここ、キャラ表示が唐突に感じるため、背景に黒ノイズ（透過）をお願いします。
 ももちゃんは、迷うこと無く自らの理想をひたすらに追い求めていく。
 @lr
 *save|本当の僕
@@ -2411,4 +2413,4 @@ Vサインで応えてきた。賛成、ということらしい。
 @musicwait
 
 ;//Next
-[jump storage="scenario/script/日向子/hinako_9.ks"]
+[jump storage="script/日向子/hinako_9.ks"]
