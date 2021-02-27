@@ -1,0 +1,19 @@
+// AfterInit2.tjs
+
+
+	function window_size_check2(){
+		if(sf.size==0&&sf.window==0)
+			return;
+		if(sf.size==2 && sf.window==0 || sf.window===void){
+			kag.primaryLayer.width = 1280;
+			kag.primaryLayer.height = 720;
+			kag.setZoom(54,72);
+			kag.innerWidth = 960;
+			kag.innerHeight = 540;
+		}else{
+			return;
+		}
+	}
+
+
+
